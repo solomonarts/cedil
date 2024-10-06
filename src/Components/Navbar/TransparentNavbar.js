@@ -13,7 +13,7 @@ import {
 // import { useRouter } from 'next/router';
 // import './Navbar.css'; // For custom styles if needed
 import { useLocation, useNavigate } from "react-router-dom";
-import { logos } from "../../Constants";
+import { logos, menu } from "../../Constants";
 
 const TransparentNavbar = () => {
   const menuItems = [
@@ -161,21 +161,21 @@ const TransparentNavbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
+        {menu.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color={
                 index === 2
                   ? "primary"
-                  : index === menuItems.length - 1
+                  : index === menu.length - 1
                   ? "danger"
                   : "foreground"
               }
               className="w-full"
-              href="#"
+              href={`${item.link}`}
               size="lg"
             >
-              {item}
+              {item.label}
             </Link>
           </NavbarMenuItem>
         ))}

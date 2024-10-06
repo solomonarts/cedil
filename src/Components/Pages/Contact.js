@@ -116,8 +116,8 @@ function Footer() {
     >
       {/* <img src={wave} alt="wave" className='absolute top-0 w-full h-full' /> */}
       <div className="container relative mx-auto">
-        <div className="flex flex-col md:flex-row gap-8 py-16 lg:grid-cols-3">
-          <div className="w-1/3">
+        <div className="flex flex-col md:flex-row gap-8 py-16 px-20 md:px-4 lg:grid-cols-3">
+          <div className="w-full md:w-1/3">
             <img src={logo} alt="Stellar Dairies" className="h-20" />
             <p className="mt-5 text-sm text-left">
               At CEDIL Global, we believe that systems change is an
@@ -127,9 +127,7 @@ function Footer() {
           </div>
           <div className="grid md:flex gap-10">
             <div>
-              <h2 className="mb-3 text-lg font-bold text-left">
-                Quick Links
-              </h2>
+              <h2 className="mb-3 text-lg font-bold text-left">Quick Links</h2>
               {menu.map((m, i) => (
                 <div key={i} className=" text-left">
                   <Link to={`/` + m.link}>
@@ -141,24 +139,29 @@ function Footer() {
             <div>
               <h2 className="mb-3 text-lg font-bold text-left">Contacts</h2>
               {contacts.map((s, i) => (
-                <div key={i} className="flex items-center content-center w-full text-left">
+                <div
+                  key={i}
+                  className="flex items-center content-center w-full text-left"
+                >
                   {s.icon}
                   <div className="flex flex-col">
-                  <p className="bg-transparent text-sm">{s.contact1}</p>
-                  <p className="bg-transparent text-sm">{s.contact2}</p>
+                    <p className="bg-transparent text-sm">{s.contact1}</p>
+                    <p className="bg-transparent text-sm">{s.contact2}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
-        <div className="p-4 text-center flex justify-between border-t">
-          <p className="w-1/3 content-center text-left">Copyright {new Date().getFullYear()}</p>
+        <div className="p-4 text-center flex flex-col px-20 md:flex-row md:px-4 justify-between border-t">
           <div className="flex gap-3 content-center items-center mt-5 text-white">
             {socials.map((s, i) => (
               <div className="text-[12px]">{s.icon}</div>
             ))}
           </div>
+          <p className="w-full mt-5 md:mt-0 md:w-1/3 content-center text-left">
+            Copyright {new Date().getFullYear()}
+          </p>
         </div>
       </div>
     </div>

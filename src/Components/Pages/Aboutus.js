@@ -32,8 +32,8 @@ const ThematicAreas = () => {
   ];
 
   return (
-    <div className="thematic-areas-container flex flex-row mt-10">
-      <div className="h-1/2 w-2/5 relative rounded-md overflow-hidden">
+    <div className="thematic-areas-container flex md:flex-row flex-col mt-10 overflow-hidden">
+      <div className="h-1/2 w-full md:w-2/5 mr-5 relative rounded-md overflow-hidden">
         <div className="absolute h-full w-full bg-black/30 justify-center content-center">
           <h4 className="text-[30px] text-white text-wrap text-center">
             Themantic Areas
@@ -41,9 +41,9 @@ const ThematicAreas = () => {
         </div>
         <img src={themanticpg} />
       </div>
-      <div className="flex gap-5 justify-center">
+      <div className="flex flex-col md:flex-row gap-5 justify-center mt-10 md:mt-0">
         {thematicAreas.map((area, index) => (
-          <div key={index} className="column">
+          <div key={index} className="column w-full md:w-auto">
             <div className="title-box">
               <h3>{area.title}</h3>
               {/* <svg className="wavy-line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10">
@@ -52,7 +52,7 @@ const ThematicAreas = () => {
                 <polygon points="98,5 94,3 94,7" fill="#6cc644"/>
               </svg> */}
             </div>
-            <ul className="text-left list-disc">
+            <ul className="text-left list-disc text-[16px]">
               {area.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
