@@ -7,6 +7,17 @@ import Approach from "../Components/Pages/Approach";
 import ContactUs from "../Components/Pages/Contact";
 import ImpactCounterSection from "../Components/Sections/ImpactSection";
 import SectionCard from "../Components/Sections/SectionCard";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaLongArrowAltRight,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
+import { HiOutlineMailOpen } from "react-icons/hi";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { SlLocationPin } from "react-icons/sl";
 
 // import '../Assets/images/logos'
 function importAll(r) {
@@ -44,6 +55,46 @@ export const cardData = [
     title: "Themantic Area 3",
     image: bannerpics["banner2.jpg"],
     description: "Enhancing Leadership For Global Development",
+  },
+];
+
+export const menu = [
+  { link: "", label: "Home" },
+  { link: "#about-us", label: "About Us" },
+  { link: "#our-programs", label: "Our Programs" },
+  { link: "#how-we-work", label: "How we Work" },
+  { link: "#our-impact", label: "Our Impact" },
+  { link: "#theory", label: "Theory" },
+  { link: "#contact-us", label: "Contact" },
+];
+
+const icon_class = "text-sm";
+
+export const socials = [
+  { icon: <FaFacebook className={icon_class} />, link: "" },
+  { icon: <FaInstagram className={icon_class} />, link: "" },
+  { icon: <FaLinkedin className={icon_class} />, link: "" },
+];
+
+const s_icon = "text-3xl tint-color";
+export const contacts = [
+  {
+    icon: <HiOutlineMailOpen className={s_icon} />,
+    label: "Send Your Email",
+    contact1: "info@cedilglobal.org, ceo@cedilglobal.org",
+    contact2: "vpglobalpartnerships@cedilglobal.org",
+  },
+  {
+    icon: <MdOutlinePhoneInTalk className={s_icon} />,
+    label: "Phone Number",
+    contact1: "Africa: +256 767 150 148 / +256 745 987 878",
+    contact2: "USA: +1 206 482 5531",
+  },
+  {
+    icon: <SlLocationPin className={s_icon} />,
+    label: "Location",
+    contact1: "Africa: Plot 2553 and 2554 Nalyamagonja, Gayaza P.O BOX 111430 Kampala Wakiso, Uganda.",
+    contact2: "USA: 17906 6th Ave West, Bothell, Washington- USA",
   },
 ];
 
@@ -141,8 +192,8 @@ export const contentData = {
       page: "contact-us",
       title: "Contact Us",
       description: "",
-      background: "bg-[#2f4f2f49]", // White background
-      textColor: "text-[#ffffff]", // Dark green text
+      background: "bg-[#ffffff]", // White background
+      textColor: "text-[#2f4f2f]", // Dark green text
       svgbg: icons["circuit-svgrepo-com.svg"],
       element: <ContactUs />,
       patternPosition: "left",

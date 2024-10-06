@@ -79,7 +79,7 @@ const BannerSlider = () => {
           <div
             key={slide.id}
             className="banner-slider__slide h-[70vh] lg:h-[55vh] flex flex-row justify-center content-center"
-            style={{ backgroundImage: `url(${banner1})` }}
+            style={{ backgroundImage: `url(${slide.background})`, backgroundColor:"red" }}
           >
             <div className="banner-slider__content pl-6 lg:pl-24">
               <h1>{slide.title}</h1>
