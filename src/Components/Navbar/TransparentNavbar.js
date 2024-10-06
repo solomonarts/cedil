@@ -58,7 +58,7 @@ const TransparentNavbar = () => {
               location.pathname === "/" ? "text-[#9ed263]" : "text-white"
             }`}
             isActive={location.pathname === ""}
-            onClick={() => navigate("/")}
+            onClick={() => navigate("#home")}
             css={{
               "&:hover": { color: "#9ed263" },
             }}

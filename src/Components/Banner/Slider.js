@@ -73,7 +73,7 @@ const BannerSlider = () => {
   ];
 
   return (
-    <div className="banner-slider h-[80vh] lg:h-[60vh]">
+    <div id="home" className="banner-slider h-[80vh] lg:h-[60vh]">
       <Slider {...settings}>
         {slides.map((slide) => (
           <div

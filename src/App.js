@@ -15,7 +15,7 @@ function App() {
         <TransparentNavbar />
         <Routes>
           <Route
-            path="/"
+            path="/*"
             element={
               <>
                 <div>
