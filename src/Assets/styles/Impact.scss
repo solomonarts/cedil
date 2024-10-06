@@ -1,0 +1,28 @@
+.impact-counter-section {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+  text-align: center;
+  color: #2f4f2f;
+}
+
+.impact-counter-section__container {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impact-counter-section__column {
+  width: 30%;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.impact-counter {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2f4f2f; /* Dark green color */
+}

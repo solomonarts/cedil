@@ -1,0 +1,109 @@
+$primary-color: #9ed263;
+$dark-green: #2f4f2f;
+$white: #ffffff;
+
+.text-darkgreen {
+  color: $dark-green;
+}
+
+.text-white {
+  color: $white;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-darkgreen {
+  background-color: $dark-green;
+}
+
+/* Pattern Container Styles */
+.pattern-container {
+  transition: transform 0.2s ease-in-out; /* Smooth transition for transform changes */
+}
+
+.pattern-left {
+  background-image: url('../images/icons/circuit-svgrepo-com.svg');
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-attachment: fixed;
+}
+
+.pattern-right {
+  background-image: url('../images/icons/tree-of-rectangles-foliage-svgrepo-com.svg');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 300px 300px;
+  background-attachment: fixed;
+}
+
+/* Parallax Speed Adjustment */
+.pattern-left {
+  background-position: left 0;
+  background-attachment: fixed;
+}
+
+.pattern-right {
+  background-position: right 0;
+  background-attachment: fixed;
+}
+
+/* Section Interaction */
+section:hover .pattern-container {
+  transform: scale(1.05); /* Slight scale on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-with-pattern {
+  position: relative;
+  padding: 50px;
+  margin: 20px 0;
+  background-color: white; /* White background for all sections */
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* Text content styling */
+.text-content {
+  position: relative;
+  z-index: 2;
+}
+
+h2.highlight-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: rgba(158, 210, 99, 0.5); /* Light green text background */
+}
+
+p {
+  font-size: 1.2rem;
+  padding: 15px;
+  background-color: rgba(0, 128, 128, 0.2); /* Teal text background */
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* Faded pattern overlay */
+.pattern-left, .pattern-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  background-image: url('../images/icons/circuit-svgrepo-com.svg'); /* Use your pattern image */
+  background-size: cover;
+  opacity: 0.1; /* Faded pattern */
+}
+
+.pattern-left {
+  left: 0;
+}
+
+.pattern-right {
+  right: 0;
+}
+

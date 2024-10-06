@@ -1,0 +1,122 @@
+.interactive-diagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .section {
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .section:hover {
+    transform: scale(1.1);
+  }
+  
+  .page {
+    padding: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #9ed263;
+  }
+  
+  .venn-diagram-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .three-column-layout {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .first-column {
+    width: 20%;
+    position: relative;
+  }
+  
+  .middle-column {
+    width: 50%;
+  }
+  
+  .last-column {
+    width: 30%;
+  }
+  
+  /* Row layout */
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+  
+  /* Column subdivisions in the middle column */
+  .col {
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Rounded rectangle */
+  .box {
+    padding: 20px;
+    background-color: lightgray;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Arrows connecting rows */
+  .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid black;
+    align-self: center;
+  }
+  
+  /* Color styling for rows */
+  .first-column .row:nth-child(odd) .box {
+    background-color: #ff9999;
+  }
+  
+  .first-column .row:nth-child(even) .box {
+    background-color: #99ccff;
+  }
+  
+  .middle-column .row:nth-child(odd) {
+    background-color: #99ff99;
+  }
+  
+  .middle-column .row:nth-child(even) {
+    background-color: #ffcc99;
+  }
+  
+  .last-column .row:nth-child(odd) .box {
+    background-color: #ccccff;
+  }
+  
+  .last-column .row:nth-child(even) .box {
+    background-color: #ffcc99;
+  }
+  
+  

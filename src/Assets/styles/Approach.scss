@@ -1,0 +1,48 @@
+/* Grid Layout */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 50px;
+  justify-items: center;
+}
+
+/* Card and connection wrapper */
+.custom-grid__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* Card styling */
+.custom-grid__card {
+  width: 150px;
+  height: 100px;
+  background-color: rgba(47, 79, 47, 0.5); /* Transparent dark green */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Title inside card */
+.custom-grid__title {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  z-index: 2;
+}
+
+/* Square wave connector */
+.custom-grid__connector {
+  margin-left: 10px;
+}
+
+svg {
+  width: 100px;
+  height: 50px;
+}
