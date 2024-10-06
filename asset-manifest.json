@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cedil/static/css/main.b2046ba4.css",
-    "main.js": "/cedil/static/js/main.f523af2a.js",
+    "main.css": "/cedil/static/css/main.baaed62a.css",
+    "main.js": "/cedil/static/js/main.5649a523.js",
     "static/js/453.760a1b19.chunk.js": "/cedil/static/js/453.760a1b19.chunk.js",
     "static/media/cedilgreen.jpg": "/cedil/static/media/cedilgreen.743140be792ff444aea6.jpg",
     "static/media/banner2.jpg": "/cedil/static/media/banner2.2012646b34474400a1c6.jpg",
@@ -20,12 +20,12 @@
     "static/media/slick.woff": "/cedil/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/cedil/index.html",
     "static/media/pattern.svg": "/cedil/static/media/pattern.24dc2d028671d080e138.svg",
-    "main.b2046ba4.css.map": "/cedil/static/css/main.b2046ba4.css.map",
-    "main.f523af2a.js.map": "/cedil/static/js/main.f523af2a.js.map",
+    "main.baaed62a.css.map": "/cedil/static/css/main.baaed62a.css.map",
+    "main.5649a523.js.map": "/cedil/static/js/main.5649a523.js.map",
     "453.760a1b19.chunk.js.map": "/cedil/static/js/453.760a1b19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2046ba4.css",
-    "static/js/main.f523af2a.js"
+    "static/css/main.baaed62a.css",
+    "static/js/main.5649a523.js"
   ]
 }
