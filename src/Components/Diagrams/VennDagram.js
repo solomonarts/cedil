@@ -56,7 +56,7 @@ const VennDiagram = () => {
           </textPath>
         </text>
         <text fontWeight="bold">
-          <textPath href="#communityTextPath" startOffset="90%" textAnchor="middle" fill="#9ed263">
+          <textPath href="#communityTextPath" startOffset="90%" textAnchor="middle" fill="#84c5c9">
             The Community
           </textPath>
         </text>

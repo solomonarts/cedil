@@ -59,7 +59,7 @@ export const cardData = [
 ];
 
 export const menu = [
-  { link: "", label: "Home" },
+  { link: "#home", label: "Home" },
   { link: "#about-us", label: "About Us" },
   { link: "#our-programs", label: "Our Programs" },
   { link: "#how-we-work", label: "How we Work" },
@@ -93,7 +93,8 @@ export const contacts = [
   {
     icon: <SlLocationPin className={s_icon} />,
     label: "Location",
-    contact1: "Africa: Plot 2553 and 2554 Nalyamagonja, Gayaza P.O BOX 111430 Kampala Wakiso, Uganda.",
+    contact1:
+      "Africa: Plot 2553 and 2554 Nalyamagonja, Gayaza P.O BOX 111430 Kampala Wakiso, Uganda.",
     contact2: "USA: 17906 6th Ave West, Bothell, Washington- USA",
   },
 ];
@@ -115,15 +116,20 @@ export const contentData = {
       background: "bg-[#ffffff]", // Light green
       textColor: "", // White text
       svgbg: icons["circuit-svgrepo-com.svg"],
-      element: <AboutUs2 />,
+      element: (
+        <>
+          <AboutUs2 />
+          <AboutUs />
+        </>
+      ),
       patternPosition: "left", // Where the pattern is displayed
     },
     {
       page: "our-programs",
       title: "Our Programs",
       description: "",
-      background: "bg-[#ecf7e0]", // White background
-      textColor: "text-[#2f4f2f]", // Dark green text
+      background: "bg-[rgba(158, 210, 99, 0.5)]", // White background
+      textColor: "text-[#053744]", // Dark green text
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],
       element: (
         <>
@@ -144,12 +150,11 @@ export const contentData = {
     {
       page: "how-we-work",
       title: "How We Work",
-      description:
-        "CEDIL Global employs a Systems Leadership Approach that combines a rights-based programming and a deep understanding of systemic dynamics, stakeholder engagement, and collaborative leadership. Our work is designed to drive change across Africa by mobilizing large networks of diverse actors to achieve a common goal.",
-      cleaarprogram:
+      description: "",
+      clearprogram:
         "Through the well researched CLEAR framework for Leading Systems Change, CEDIL Global applies the five key elements of the systems change process in its strategic programming, budgeting and implementation.",
       background: "bg-[#ffffff]", // Light green
-      textColor: "text-[#2f4f2f]", // White text
+      textColor: "text-[#053744]", // White text
       svgbg: icons["circuit-svgrepo-com.svg"],
       element: (
         <>
@@ -163,7 +168,7 @@ export const contentData = {
       title: "Our Impact",
       description:
         " CEDIL Global operates in 23 African countries in collaboration with local partners, civil society, universities, and faith-based organizations. Our projects have provided life-changing benefits to women, youth, and children across the continent, fostering sustainable development and equitable growth.",
-      background: "bg-[#2f4f2f]", // Dark green
+      background: "bg-[#053744]", // Dark green
       textColor: "text-[#ffffff]", // White text
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],
       element: (
@@ -179,7 +184,7 @@ export const contentData = {
       description:
         "Using the Development Systems Leadership Model, CEDIL catalyzes institutional and systems-level change across Africa through stakeholder engagement, empowerment, and innovation.",
       background: "bg-[#ffffff]", // Dark green
-      textColor: "text-[#2f4f2f]", // White text
+      textColor: "text-[#053744]", // White text
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],
       element: (
         <>
@@ -193,7 +198,7 @@ export const contentData = {
       title: "Contact Us",
       description: "",
       background: "bg-[#ffffff]", // White background
-      textColor: "text-[#2f4f2f]", // Dark green text
+      textColor: "text-[#053744]", // Dark green text
       svgbg: icons["circuit-svgrepo-com.svg"],
       element: <ContactUs />,
       patternPosition: "left",

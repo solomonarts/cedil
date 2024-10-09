@@ -37,7 +37,7 @@ const TransparentNavbar = () => {
     <Navbar
       // isBordered={false}
       shouldHideOnScroll
-      className="bg-[#2f4f2f]"
+      className="bg-[#053744]"
     >
       <NavbarContent>
         <NavbarMenuToggle
@@ -55,12 +55,12 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link ${
-              location.pathname === "/" ? "text-[#9ed263]" : "text-white"
+              location.pathname === "" || location.hash === "#home" ? "text-[#84c5c9]" : "text-white"
             }`}
-            isActive={location.pathname === ""}
+            isActive={location.pathname === "" | location.hash ==="#home"}
             onClick={() => navigate("#home")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             Home
@@ -70,12 +70,12 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link ${
-              location.hash === "#about-us" ? "text-[#9ed263]" : "text-white"
+              location.hash === "#about-us" ? "text-[#84c5c9]" : "text-white"
             }`}
             isActive={location.hash === "#about-us"}
             onClick={() => navigate("#about-us")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             About Us
@@ -86,13 +86,13 @@ const TransparentNavbar = () => {
           <Link
             className={`navbar-link ${
               location.hash === "#our-programs"
-                ? "text-[#9ed263]"
+                ? "text-[#84c5c9]"
                 : "text-white"
             }`}
             isActive={location.hash === "#our-programs"}
             onClick={() => navigate("#our-programs")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             Our Programs
@@ -102,12 +102,12 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link ${
-              location.hash === "#how-we-work" ? "text-[#9ed263]" : "text-white"
+              location.hash === "#how-we-work" ? "text-[#84c5c9]" : "text-white"
             }`}
             isActive={location.hash === "#how-we-work"}
             onClick={() => navigate("#how-we-work")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             How We Work
@@ -117,12 +117,12 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link ${
-              location.hash === "#our-impact" ? "text-[#9ed263]" : "text-white"
+              location.hash === "#our-impact" ? "text-[#84c5c9]" : "text-white"
             }`}
             isActive={location.hash === "#our-impact"}
             onClick={() => navigate("#our-impact")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             Our Impact
@@ -132,12 +132,12 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link ${
-              location.hash === "#theory" ? "text-[#9ed263]" : "text-white"
+              location.hash === "#theory" ? "text-[#84c5c9]" : "text-white"
             }`}
             isActive={location.hash === "#theory"}
             onClick={() => navigate("#theory")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             Theory
@@ -147,12 +147,12 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link ${
-              location.hash === "#contact-us" ? "text-[#9ed263]" : "text-white"
+              location.hash === "#contact-us" ? "text-[#84c5c9]" : "text-white"
             }`}
             isActive={location.hash === "#contact-us"}
             onClick={() => navigate("#contact-us")}
             css={{
-              "&:hover": { color: "#9ed263" },
+              "&:hover": { color: "#84c5c9" },
             }}
           >
             Contact Us

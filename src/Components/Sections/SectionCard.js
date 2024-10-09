@@ -13,7 +13,7 @@ const Card = ({ title, image, description }) => {
 
   return (
     <div
-      className={`card-container mt-10 ${isRevealed ? "open" : ""}`}
+      className={`card-container  bg-white mt-10 ${isRevealed ? "open" : ""}`}
       onClick={toggleReveal}
       // onMouseEnter={() => setIsRevealed(true)}
       // onMouseLeave={() => setIsRevealed(false)}
@@ -25,9 +25,9 @@ const Card = ({ title, image, description }) => {
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
         {isRevealed && (
-          <p className="card-description bg-white">{description}</p>
+          <p className="card-description bg-transparent">{description}</p>
         )}
-        <Button className="mt-3 bg-[#2f4f2f] text-white"><Link to="/about-us">Discover More</Link></Button>
+        <Button className="mt-3 bg-[#053744] text-[#9ed263]"><Link to="/about-us">Discover More</Link></Button>
       </div>
     </div>
   );

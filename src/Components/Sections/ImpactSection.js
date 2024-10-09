@@ -30,7 +30,7 @@ const ImpactCounterSection = () => {
     <div className="impact-counter-section" ref={counterRef}>
       <div className="impact-counter-section__container">
         <div className="impact-counter-section__column">
-          <div className="impact-counter">
+          <div className="impact-counter text-[#9ed263] text-[SofiaBold]">
             {inView && <CountUp start={0} end={23} duration={3} />}{" "}
             {/* Change end value to actual count */}
           </div>
@@ -38,7 +38,7 @@ const ImpactCounterSection = () => {
         </div>
 
         <div className="impact-counter-section__column">
-          <div className="impact-counter">
+          <div className="impact-counter text-[#9ed263] text-[SofiaBold]">
             {inView && <CountUp start={0} end={10} duration={3} />}{" "}
             {/* Change end value to actual count */}
           </div>
@@ -46,7 +46,7 @@ const ImpactCounterSection = () => {
         </div>
 
         <div className="impact-counter-section__column">
-          <div className="impact-counter">
+          <div className="impact-counter text-[#9ed263] text-[SofiaBold]">
             {inView && <CountUp start={0} end={200} duration={3} />}{" "}
             {/* Change end value to actual count */}
           </div>

@@ -1,30 +1,18 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-import React from "react";
-import Slider from "react-slick";
+// SliderWithThumbnails.jsx
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Thumbs, Autoplay } from "swiper/modules";
+import "swiper/css"; // Core Swiper CSS
+import "swiper/css/navigation"; // Navigation module styles
+import "swiper/css/pagination"; // Pagination module styles
+import "swiper/css/thumbs"; // Thumbs module styles
 import { bannerpics } from "../../Constants";
-// import './BannerSlider.css'; // Custom CSS for styling the banner slider
-import banner1 from "../../Assets/images/banner/banner1.jpg"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const BannerSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    autoplay: true,
-    speed: 2000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    customPaging: (i) => (
-      <div className="custom-dot">
-        <img
-          src={`${bannerpics[`banner${i + 1}.jpg`]}`}
-          alt={`Slide ${i + 1}`}
-        />
-      </div>
-    ),
-    dotsClass: "slick-dots slick-thumb",
-  };
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   const slides = [
     {
@@ -34,6 +22,8 @@ const BannerSlider = () => {
       explainer:
         "A registered international and regional not-for-profit organization catalyzing systemic change across Africa through innovative and rights-based development models, technologies, and leadership development.",
       background: `${bannerpics["banner1.jpg"]}`,
+      cta1: "Donate",
+      cta2: "Join Us",
     },
     {
       id: 2,
@@ -41,6 +31,8 @@ const BannerSlider = () => {
       explainer:
         "in Development Programming for Sustainable Development and Systemic Changes in Africa.",
       background: `${bannerpics["banner2.jpg"]}`,
+      cta1: "Donate",
+      cta2: "Join Us",
     },
     {
       id: 3,
@@ -48,6 +40,8 @@ const BannerSlider = () => {
       explainer:
         "Accelerating Gendered and Equitable Transformative Mechanisms in Afri-Economic Financing and Growth",
       background: `${bannerpics["banner3.jpg"]}`,
+      cta1: "Donate",
+      cta2: "Join Us",
     },
     {
       id: 4,
@@ -55,6 +49,8 @@ const BannerSlider = () => {
       explainer:
         "Innovations, and Technology through Strategic Action Research Implementation , Policy, Engagement and Evidence Generation.",
       background: `${bannerpics["banner4.jpg"]}`,
+      cta1: "Donate",
+      cta2: "Join Us",
     },
     {
       id: 5,
@@ -62,6 +58,8 @@ const BannerSlider = () => {
       explainer:
         "Competences and Practices for Nonprofits and Public Entities’ Excellence through direct support, technical assistance and strategic consultancy services.",
       background: `${bannerpics["banner5.jpg"]}`,
+      cta1: "Donate",
+      cta2: "Join Us",
     },
     {
       id: 6,
@@ -69,25 +67,94 @@ const BannerSlider = () => {
       explainer:
         "for Leadership Development and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
       background: `${bannerpics["banner6.jpg"]}`,
+      cta1: "Donate",
+      cta2: "Join Us",
     },
   ];
 
   return (
-    <div id="home" className="banner-slider h-[80vh] lg:h-[60vh]">
-      <Slider {...settings}>
-        {slides.map((slide) => (
-          <div
-            key={slide.id}
-            className="banner-slider__slide h-[70vh] lg:h-[55vh] flex flex-row justify-center content-center"
-            style={{ backgroundImage: `url(${slide.background})`, backgroundColor:"red" }}
-          >
-            <div className="banner-slider__content pl-6 lg:pl-24">
-              <h1>{slide.title}</h1>
-              <p>{slide.explainer}</p>
+    <div id="home" className="banner-slider h-[80vh] lg:h-[70vh]">
+      {/* Main Swiper */}
+      <Swiper
+        modules={[Navigation, Pagination, Thumbs, Autoplay]} // Added Autoplay module here
+        autoplay={{ delay: 5000, disableOnInteraction: false }} // Autoplay settings
+        thumbs={{
+          swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
+        }} // Safe checking thumbsSwiper
+        pagination={{ clickable: true }}
+        loop={true}
+        className="w-full h-full"
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+        }}
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div
+              className="relative w-full h-full bg-cover bg-center flex items-center"
+              style={{ backgroundImage: `url(${slide.background})` }}
+            >
+              <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
+              <div className="container mx-auto px-4 z-20">
+                <div className="text-white max-w-lg">
+                  <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
+                  <p className="text-lg mb-6">{slide.explainer}</p>
+                  <div className="flex space-x-4">
+                    <button className="bg-[#9ed263] text-black px-6 py-2 rounded-md hover:bg-[#9ed263] transition-all">
+                      {slide.cta1}
+                    </button>
+                    <button className="bg-transparent border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition-all">
+                      {slide.cta2}
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+
+        {/* Custom Navigation Buttons */}
+        <div
+          ref={prevRef}
+          className="absolute top-1/2 left-5 z-30 -translate-y-1/2"
+        >
+          <button className="p-2 rounded-full flex justify-center w-10 h-auto aspect-square content-center bg-black bg-opacity-50 hover:bg-opacity-75 transition">
+            <FaChevronLeft className="text-white m-auto" />
+          </button>
+        </div>
+        <div
+          ref={nextRef}
+          className="absolute top-1/2 right-5 z-30 -translate-y-1/2"
+        >
+          <button className="p-2 rounded-full flex justify-center w-10 h-auto aspect-square content-center bg-black bg-opacity-50 hover:bg-opacity-75 transition">
+            <FaChevronRight className="text-white m-auto" />
+          </button>
+        </div>
+      </Swiper>
+
+      {/* Thumbnail Swiper */}
+      {/* <Swiper
+        modules={[Thumbs]}
+        onSwiper={setThumbsSwiper}
+        slidesPerView={4}
+        spaceBetween={10}
+        className="w-full h-24 mt-6"
+        watchSlidesProgress={true}
+      >
+        {slides.map((slide, index) => (
+          <SwiperSlide key={index}>
+            <div
+              className="w-full h-full bg-cover bg-center"
+              style={{ backgroundImage: `url(${slide.background})` }}
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper> */}
     </div>
   );
 };

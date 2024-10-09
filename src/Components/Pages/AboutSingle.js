@@ -1,5 +1,8 @@
 import React from "react";
-import ThematicAreas from "./Aboutus";
+import ThematicAreas from "./ThemanticAreas";
+import { Link } from "react-router-dom";
+import { FaArrowLeft } from "react-icons/fa";
+
 // import './AboutUsPage.css'; // Import styles
 
 const AboutUsSingle = () => {
@@ -8,7 +11,7 @@ const AboutUsSingle = () => {
       {/* Header Section */}
       <header className="about-us-header">
         <div className="overlay">
-          <h1 className="page-title">About Us</h1>
+          <h1 className="page-title"> <Link className="hover:text-[#9ed263]" to={`/`}> {`< `}Home</Link> | About Us</h1>
         </div>
       </header>
 
@@ -20,7 +23,7 @@ const AboutUsSingle = () => {
           decision-making to achieve long-term, sustainable development goals.
         </p>
         <div>
-          <ThematicAreas />
+          < ThematicAreas />
         </div>
         {/* Additional content can go here */}
       </main>

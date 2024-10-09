@@ -12,7 +12,7 @@
   display: block;
   width: 100%;
   height: 2px; /* Thickness of the bar */
-  background-color: #9ed263; /* Light green color */
+  background-color: #84c5c9; /* Light green color */
   position: absolute;
   left: 0;
   bottom: -5px; /* Position the bar below the link */
@@ -23,3 +23,6 @@
 .navbar-link:hover::after {
   transform: scaleX(1);
 }
+
+/*#053744*/
+/*#84c5c9*/

@@ -47,7 +47,7 @@ const SectionWithPattern = ({
   return (
     <section
       id={page}
-      className={`relative flex items-center justify-center min-h-[70vh] py-10 px-5 md:px-36 ${backgroundColor} ${textColor}`}
+      className={`relative flex items-center justify-center min-h-[70vh] py-10 px-5 md:px-20 ${backgroundColor} ${textColor}`}
       onMouseMove={handleMouseMove}
       onClick={handleClick}
     >

@@ -7,6 +7,7 @@ import InnovationsSection from "./Components/Sections/InnovationsSection";
 import SectionWithPattern from "./Components/Sections/SectionWithPattern";
 import { bannerpics } from "./Constants";
 import AboutUsSingle from "./Components/Pages/AboutSingle";
+import HomePage from "./Components/Pages/HomePage";
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
             element={
               <>
                 <div>
+                  {/* <HomePage /> */}
+
                   <Banner />
                   {/* First section with Banner */}
                   {/* <ScrollEffect

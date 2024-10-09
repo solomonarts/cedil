@@ -1,13 +1,22 @@
+@font-face {
+  font-family: "SofiaLight"; /* Name your font family */
+  src: url("./Assets/Fonts/sofia-pro/Sofia\ Pro\ Light\ Az.otf"); /* Locate the .ttf file within your directory*/
+}
+
+@font-face {
+  font-family: "SofiaBold"; /* Name your font family */
+  src: url("./Assets/Fonts/sofia-pro/Sofia\ Pro\ Bold\ Az.otf"); /* Locate the .ttf file within your directory*/
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "SofiaLight";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

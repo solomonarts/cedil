@@ -1,0 +1,114 @@
+.header {
+  background-color: #2b3a67; /* Dominant Deep Blue */
+  color: #e0e0e0; /* Light Gray Text */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav ul li a {
+  color: #e0e0e0; /* Light Gray */
+  text-decoration: none;
+}
+
+.cta-button {
+  background-color: #9ed263; /* Accent Green */
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.hero-banner {
+  height: 100vh;
+  background: url("../images/banner/banner2.jpg") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  background-color: rgba(43, 58, 103, 0.7); /* Deep blue overlay */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-text {
+  color: #e0e0e0; /* Light Gray Text */
+  text-align: left;
+  padding: 2rem;
+}
+
+.cta-button {
+  background-color: #9ed263; /* Green Accent Button */
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .banner-text {
+    text-align: center;
+  }
+}
+
+.about-us {
+  background-color: #f0f0f0; /* Light Gray Background */
+  padding: 4rem 2rem;
+}
+
+.about-us h2 {
+  color: #2b3a67; /* Deep Blue for heading */
+}
+
+.about-us p {
+  color: #333; /* Darker color for paragraph */
+}
+
+.impact-counter {
+  background-color: #2b3a67; /* Deep Blue Background */
+  color: #ffffff; /* White text */
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.counter h3 {
+  color: #9ed263; /* Accent Green */
+  font-size: 3rem;
+}
+
+.counter p {
+  color: #fff; /* White text */
+}
+
+@media (max-width: 768px) {
+  .counter-container {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  background-color: #2b3a67; /* Deep Blue */
+  color: #e0e0e0; /* Light gray text */
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.social-icons a {
+  color: #9ed263; /* Green accent for social icons */
+  margin: 0 10px;
+}

@@ -17,35 +17,35 @@ const InteractiveDiagram = () => {
         {/* Diagram clickable sections */}
         <Link to="/impact">
           <svg className="section impact" width="200" height="100">
-            <rect width="200" height="100" fill="#9ed263" />
+            <rect width="200" height="100" fill="#84c5c9" />
             <text x="50" y="50" fill="#ffffff" fontSize="16">Impact</text>
           </svg>
         </Link>
 
         <Link to="/longer-term-outcomes">
           <svg className="section outcomes" width="250" height="100">
-            <rect width="250" height="100" fill="#ffffff" stroke="#9ed263" strokeWidth="2" />
+            <rect width="250" height="100" fill="#ffffff" stroke="#84c5c9" strokeWidth="2" />
             <text x="20" y="50" fill="#009e43" fontSize="16">Longer-term Outcomes</text>
           </svg>
         </Link>
 
         <Link to="/strategic-areas">
           <svg className="section strategic-areas" width="200" height="100">
-            <rect width="200" height="100" fill="#9ed263" />
+            <rect width="200" height="100" fill="#84c5c9" />
             <text x="50" y="50" fill="#ffffff" fontSize="16">Strategic Areas</text>
           </svg>
         </Link>
 
         <Link to="/strategies">
           <svg className="section strategies" width="250" height="100">
-            <rect width="250" height="100" fill="#ffffff" stroke="#9ed263" strokeWidth="2" />
+            <rect width="250" height="100" fill="#ffffff" stroke="#84c5c9" strokeWidth="2" />
             <text x="20" y="50" fill="#009e43" fontSize="16">Strategies</text>
           </svg>
         </Link>
 
         <Link to="/shorter-term-outcome">
           <svg className="section short-term-outcome" width="300" height="100">
-            <rect width="300" height="100" fill="#9ed263" />
+            <rect width="300" height="100" fill="#84c5c9" />
             <text x="50" y="50" fill="#ffffff" fontSize="16">Shorter-Term Outcome</text>
           </svg>
         </Link>
