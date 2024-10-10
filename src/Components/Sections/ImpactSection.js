@@ -47,7 +47,7 @@ const ImpactCounterSection = () => {
 
         <div className="impact-counter-section__column">
           <div className="impact-counter text-[#9ed263] text-[SofiaBold]">
-            {inView && <CountUp start={0} end={200} duration={3} />}{" "}
+            {inView && <CountUp start={0} end={80} duration={3} />}{" "}
             {/* Change end value to actual count */}
           </div>
           <h2>Individual Organizations</h2>

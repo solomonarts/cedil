@@ -13,7 +13,7 @@ import {
   FaLinkedin,
   FaLongArrowAltRight,
 } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
 
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
@@ -42,17 +42,17 @@ export const icons = importAll(
 
 export const cardData = [
   {
-    title: "Themantic Area 1",
+    title: "Thematic Area 1",
     image: bannerpics["banner3.jpg"],
-    description: "Enhancing Gender & Health Justice For All In Africa",
+    description: "Advancing Gender, Health & Climate Justice for All In Africa",
   },
   {
-    title: "Themantic Area 2",
+    title: "Thematic Area 2",
     image: bannerpics["banner1.jpg"],
-    description: "Fostering Innovations For Development",
+    description: "Fostering Innovations and Skilling for Development",
   },
   {
-    title: "Themantic Area 3",
+    title: "Thematic Area 3",
     image: bannerpics["banner2.jpg"],
     description: "Enhancing Leadership For Global Development",
   },
@@ -68,34 +68,35 @@ export const menu = [
   { link: "#contact-us", label: "Contact" },
 ];
 
-const icon_class = "text-sm";
+const icon_class = "w-10 h-auto";
 
 export const socials = [
   { icon: <FaFacebook className={icon_class} />, link: "" },
   { icon: <FaInstagram className={icon_class} />, link: "" },
   { icon: <FaLinkedin className={icon_class} />, link: "" },
+  { icon: <FaXTwitter className={icon_class} />, link: "" },
 ];
 
-const s_icon = "text-3xl tint-color";
+const s_icon = "tint-color w-10 h-auto";
 export const contacts = [
   {
     icon: <HiOutlineMailOpen className={s_icon} />,
     label: "Send Your Email",
-    contact1: "info@cedilglobal.org, ceo@cedilglobal.org",
-    contact2: "vpglobalpartnerships@cedilglobal.org",
-  },
-  {
-    icon: <MdOutlinePhoneInTalk className={s_icon} />,
-    label: "Phone Number",
-    contact1: "Africa: +256 767 150 148 / +256 745 987 878",
-    contact2: "USA: +1 206 482 5531",
+    contact1: "Send us a Mail",
+    contact2: "info@cedilglobal.org",
   },
   {
     icon: <SlLocationPin className={s_icon} />,
-    label: "Location",
+    label: "Africa Office",
     contact1:
-      "Africa: Plot 2553 and 2554 Nalyamagonja, Gayaza P.O BOX 111430 Kampala Wakiso, Uganda.",
-    contact2: "USA: 17906 6th Ave West, Bothell, Washington- USA",
+      "Africa : Plot 2553 and 2554 Nalyamagonja, Gayaza P.O BOX 111430 Kampala Wakiso, Uganda.",
+    contact2: "Tel: +256 767 150 148 / +256 745 987 878",
+  },
+  {
+    icon: <SlLocationPin className={s_icon} />,
+    label: "USA Office",
+    contact1: "USA: 17906 6th Ave West, Bothell, Washington- USA ",
+    contact2: "Tel : +1 206 482 5531",
   },
 ];
 

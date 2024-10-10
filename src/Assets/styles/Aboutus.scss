@@ -112,15 +112,13 @@
 }
 
 .wavy-line {
-  margin: 20px auto;
+  margin: 5px auto;
   display: flex;
   justify-content: center;
-}
-
-svg {
-  margin-top: 20px;
-  width: 100%;
-  height: auto;
+  svg {
+    width: 100px;
+    height: 25px;
+  }
 }
 
 /*About siingle*/
@@ -167,6 +165,4 @@ svg {
 }
 
 /*themantic */
-
-
 

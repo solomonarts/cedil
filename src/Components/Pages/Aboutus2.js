@@ -9,16 +9,16 @@ const AboutUs = () => {
 
         <div className="column lg:px-0 mx-auto w-full">
           <div className="title-box bg-[#053744]">Our Vision</div>
-          <div className="wavy-line h-6 rotate-90">
-            <svg height="25" width="50" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5" cy="25" r="3" fill="#9ed263" />
+           <div className="wavy-line h-1 rotate-90">
+            <svg height="12.5" width="25" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="2.5" cy="12.5" r="1.3" fill="#9ed263" />
               <path
-                d="M 10 25 Q 30 5, 50 25 T 90 25"
+                d="M 5 12.5 Q 15 2.5, 25 12.5 T 45 12.5"
                 stroke="#9ed263"
                 strokeWidth="2"
                 fill="transparent"
               />
-              <polygon points="95,22 100,25 95,28" fill="#9ed263" />
+              <polygon points="47.5,11 50,12.5 47.5,14" fill="#9ed263" />
             </svg>
           </div>
           <p className="description bg-[#05374413] h-full text-left">
@@ -30,16 +30,16 @@ const AboutUs = () => {
 
         <div className="column lg:px-0 mx-auto w-full">
           <div className="title-box bg-[#053744]">Our Mission</div>
-          <div className="wavy-line h-6 rotate-90">
-            <svg height="25" width="50" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5" cy="25" r="3" fill="#9ed263" />
+          <div className="wavy-line h-1 rotate-90">
+            <svg height="12.5" width="25" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="2.5" cy="12.5" r="1.3" fill="#9ed263" />
               <path
-                d="M 10 25 Q 30 5, 50 25 T 90 25"
+                d="M 5 12.5 Q 15 2.5, 25 12.5 T 45 12.5"
                 stroke="#9ed263"
                 strokeWidth="2"
                 fill="transparent"
               />
-              <polygon points="95,22 100,25 95,28" fill="#9ed263" />
+              <polygon points="47.5,11 50,12.5 47.5,14" fill="#9ed263" />
             </svg>
           </div>
           <p className="description bg-[#05374413] h-full text-left">
@@ -51,16 +51,16 @@ const AboutUs = () => {
         </div>
         <div className="column lg:px-0 mx-auto w-full">
           <div className="title-box bg-[#053744]">Our Values</div>
-          <div className="wavy-line h-6 rotate-90">
-            <svg height="25" width="50" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="5" cy="25" r="3" fill="#9ed263" />
+          <div className="wavy-line h-1 rotate-90">
+            <svg height="12.5" width="25" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="2.5" cy="12.5" r="1.3" fill="#9ed263" />
               <path
-                d="M 10 25 Q 30 5, 50 25 T 90 25"
+                d="M 5 12.5 Q 15 2.5, 25 12.5 T 45 12.5"
                 stroke="#9ed263"
                 strokeWidth="2"
                 fill="transparent"
               />
-              <polygon points="95,22 100,25 95,28" fill="#9ed263" />
+              <polygon points="47.5,11 50,12.5 47.5,14" fill="#9ed263" />
             </svg>
           </div>
           <p className="description bg-[#05374413] h-full text-left">
