@@ -20,14 +20,15 @@ const BannerSlider = () => {
       title:
         "Center for Development Innovations and Leadership (CEDIL) Global.",
       explainer:
-        "A registered international and Africa-Based not-for-profit organization catalyzing systemic change in Africa through innovative and rights-based health, gender and climate justice, skilling for youth in cities, and leadership development models.",
-      background: `${bannerpics["banner1.jpg"]}`,
+        "A registered international and Africa-Based not-for-profit organization catalyzing systemic change in Africa Cities and Communities through innovative leadership development and rights-based health, economic, gender and climate justice programs for women, girls and youth.",
+      background: `${bannerpics["banner3.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
     },
     {
       id: 2,
-      title: "Enhancing Sustainable Systems Leadership and local Solutions for Development.",
+      title:
+        "Enhancing Sustainable Systems Leadership and local Solutions for Development.",
       explainer:
         "Co-creating Development Solutions and Programming for Sustainable Systemic Change in Africa.",
       background: `${bannerpics["banner2.jpg"]}`,
@@ -36,16 +37,18 @@ const BannerSlider = () => {
     },
     {
       id: 3,
-      title: "Accelerating Transformative Mechanisms for Gender and Climate Justice",
+      title:
+        "Accelerating Transformative Mechanisms for Gender and Climate Justice",
       explainer:
         "Accelerating Gendered and Equitable Afri-Economic Financing and Growth. Fostering Climate Justice Programs.",
-      background: `${bannerpics["banner3.jpg"]}`,
+      background: `${bannerpics["banner9.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
     },
     {
       id: 4,
-      title: "Fostering an Ecosystem of partnerships for Advancing Rights-Based Innovations and Development Models",
+      title:
+        "Fostering an Ecosystem of partnerships for Advancing Rights-Based Innovations and Development Models",
       explainer:
         "Promoting Innovations, and Technology through Strategic Action Research, Implementation , Policy, Engagement and Evidence Generation.",
       background: `${bannerpics["banner4.jpg"]}`,
@@ -66,7 +69,7 @@ const BannerSlider = () => {
       title: "Offering Regional and Global space for Leadership Development",
       explainer:
         "Strategic Leadership Development and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
-      background: `${bannerpics["banner6.jpg"]}`,
+      background: `${bannerpics["banner7.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
     },
@@ -77,7 +80,7 @@ const BannerSlider = () => {
       {/* Main Swiper */}
       <Swiper
         modules={[Navigation, Pagination, Thumbs, Autoplay]} // Added Autoplay module here
-        // autoplay={{ delay: 40000, disableOnInteraction: false }} // Autoplay settings
+        autoplay={{ delay: 8000, disableOnInteraction: false }} // Autoplay settings
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }} // Safe checking thumbsSwiper

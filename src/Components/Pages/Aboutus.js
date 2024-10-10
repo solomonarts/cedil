@@ -13,9 +13,10 @@ const Aboutus3 = () => {
           <p className="description bg-[#05374413] text-left relative">
             {/* By using innovative methodologies, CEDIL ensures that programs are
             evidence-based, scalable, and impactful for sustainable development. */}
-            We promote locally-owned development and globally tested and
-            acceptable accountability mechanisms that reduce financing wastage
-            in development institutional systems.
+            We promote locally-owned development solutions and globally tested
+            accountability mechanisms that reduce financing wastage in
+            development institutional systems advancing health, gender, economic
+            and climate Justice.
           </p>
           <p className="description bg-[#05374413] text-left relative">
             {/* By using innovative methodologies, CEDIL ensures that programs are
@@ -34,9 +35,10 @@ const Aboutus3 = () => {
           <p className="description bg-[#05374413] text-left relative">
             {/* By using innovative methodologies, CEDIL ensures that programs are
             evidence-based, scalable, and impactful for sustainable development. */}
-            We foster regional and global partnerships and collaborations that
-            accelerate widespread actions for systemic change at national,
-            regional, and continental levels.
+            We foster strategic collaboratives, and partnerships that accelerate
+            widespread actions for advancing systemic change in health, gender,
+            economic and climate justice at national, regional, and Africa
+            continental levels.
           </p>
         </div>
       </div>

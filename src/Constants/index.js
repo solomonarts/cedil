@@ -43,17 +43,17 @@ export const icons = importAll(
 export const cardData = [
   {
     title: "Thematic Area 1",
-    image: bannerpics["banner3.jpg"],
-    description: "Advancing Gender, Health & Climate Justice for All In Africa",
+    image: bannerpics["banner9.jpg"],
+    description: "Advancing Gender, Health, Economic and Climate Justice for All in Africa",
   },
   {
     title: "Thematic Area 2",
-    image: bannerpics["banner1.jpg"],
+    image: bannerpics["banner8.jpg"],
     description: "Fostering Innovations and Skilling for Development",
   },
   {
     title: "Thematic Area 3",
-    image: bannerpics["banner2.jpg"],
+    image: bannerpics["banner7.jpg"],
     description: "Enhancing Leadership For Global Development",
   },
 ];

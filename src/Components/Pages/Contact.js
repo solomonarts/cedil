@@ -144,9 +144,9 @@ function Footer() {
                   className="flex items-center content-center w-full text-left"
                 >
                   {s.icon}
-                  <div className="grid">
-                    <p className="bg-transparent text-sm">{s.contact1}</p>
-                    <p className="bg-transparent text-sm">{s.contact2}</p>
+                  <div className="flex flex-col">
+                    <p className="bg-transparent text-[16px] font-semibold">{s.contact1}</p>
+                    <p className="bg-transparent text-[16px] font-semibold">{s.contact2}</p>
                   </div>
                 </div>
               ))}

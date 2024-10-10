@@ -9,7 +9,7 @@ const AboutUs = () => {
 
         <div className="column lg:px-0 mx-auto w-full">
           <div className="title-box bg-[#053744]">Our Vision</div>
-           <div className="wavy-line h-1 rotate-90">
+          <div className="wavy-line h-1 rotate-90">
             <svg height="12.5" width="25" xmlns="http://www.w3.org/2000/svg">
               <circle cx="2.5" cy="12.5" r="1.3" fill="#9ed263" />
               <path
@@ -23,8 +23,8 @@ const AboutUs = () => {
           </div>
           <p className="description bg-[#05374413] h-full text-left">
             To be the leading catalyst of systemic rights-based development
-            change that embraces gender, health, climate and economic justice
-            for all across Africa.
+            change that embraces leadership for gender, health, climate and
+            economic justice for all across Africa
           </p>
         </div>
 
@@ -43,10 +43,11 @@ const AboutUs = () => {
             </svg>
           </div>
           <p className="description bg-[#05374413] h-full text-left">
-            To foster innovative, locally driven solutions in Africa that
-            address the continent's development challenges through strategic
-            collaborations, institutional capacity strengthening, research and
-            innovation, and systems leadership development.
+            To foster innovative, locally driven collaboratives and solutions in
+            Africa that address the continent's health, gender, economic and
+            climate development challenges through strategic partnerships ,
+            institutional capacity strengthening, research and innovation, and
+            systems leadership development.
           </p>
         </div>
         <div className="column lg:px-0 mx-auto w-full">

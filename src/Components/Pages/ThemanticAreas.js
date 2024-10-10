@@ -10,20 +10,20 @@ const ThematicAreas = () => {
   const thematicAreas = [
     {
       title:
-        "Enhancing Gender, Health, Economic & Climate Justice for All in Africa",
+        "Advancing Gender, Health, Economic and Climate Justice for All in Africa",
       points: [
-        "Advancing Gender Equitable Economies and Gendered Financing for Climate Justice.",
-        "Implement multi-country collaboratives for maternal, newborn, child, and youth health programs.",
-        "Develop & Implement an Afri-Institutional Capacity Development – ICD Platform & Fellowships.",
-        "Re-imagining Innovative response to Anti-corruption & Illicit Financial Flows in cities and municipalities.",
+        "Advancing Gender Equitable Economies, and Gendered Financing for Climate Justice.",
+        "Do-create and Implement multi-country collaboratives and programs for addressing obstacles to maternal, newborn, child, and youth health.",
+        "Develop and Implement an Afri-Institutional Capacity Development – ICD Platform and Fellowships.",
+        "Re-imagine Social Sector Development in urban settings through Innovative response to Anti-corruption and Illicit Financial Flows in cities and municipalities.",
       ],
     },
     {
-      title: "Fostering Innovations and Skilling for Development",
+      title: "Fostering Innovations and Skilling for Development(FISD).",
       points: [
         "Co-create Africa Cities Innovations and Employment Hubs to reduce Global North Migration.",
-        "Support Youth Livelihood & Economic Empowerment Programs.",
-        "Run an Afri-Lead Talk Media Channel.",
+        "Support Women, Girls and Youth Livelihood and Economic Empowerment Programs.",
+        "Run an Afri-Lead Talk Media Channel to highlight Africa Innovations and Developments.",
         "Launch and manage a Flexible Development Innovations Fund for Africa Rockstars.",
         "Promote a Human Rights-Based Approach to Development Programming",
       ],
@@ -32,10 +32,11 @@ const ThematicAreas = () => {
       title: "Enhancing Leadership for Global Development",
       points: [
         "Construct a CEDIL Global Center",
-        "Establish & Run a Global Leadership Institute includiing Annual Leadership Awards.",
-        "Run a Certified Nonprofit Executive & Board Leadership Fellowship",
-        "Providing Technical Assistance and Expertise in Fundraising, Partnerships and Grants Management Leadership.",
-        "Develop and Implement Global South - Global North Research Fellowships.",
+        "Establish and Run a Global Leadership Institute includiing Running Annual Leadership and Philanthropic Awards.",
+        "Run a Certified Nonprofit Executive and Board Leadership Fellowship.",
+        "Providing Technical Assistance and Expertise in Fundraising, Strategic Partnerships, and Grants Management Leadership to other Nonprofits and Africa Universities.",
+        "Develop and Implement Global South-South and Global North-South Research Partnerships and Fellowships.",
+        "Establish an Africa Journal for Local Solutions, Innovations, and Leadership Development (AJLSILD)."
       ],
     },
   ];
@@ -79,9 +80,11 @@ const ThematicAreas = () => {
                 <polygon points="98,5 94,3 94,7" fill="#6cc644"/>
               </svg> */}
                 </div>
-                <ul className="text-left list-disc text-[16px]">
+                <ul className="text-left text-[16px]">
                   {area.points.map((point, i) => (
-                    <li key={i}>{point}</li>
+                    <li className="border-b-2 border-white" key={i}>
+                      {point}
+                    </li>
                   ))}
                 </ul>
 
@@ -105,7 +108,9 @@ const ThematicAreas = () => {
           {thematicAreas.map((area, index) => (
             <SwiperSlide key={index}>
               <div className="p-2 bg-gray-200 rounded-lg text-center cursor-pointer hover:bg-gray-300">
-                <p className="text-sm font-semibold text-wrap line-clamp-3">Thematic Area {index + 1}</p>
+                <p className="text-sm font-semibold text-wrap line-clamp-3">
+                  Thematic Area {index + 1}
+                </p>
               </div>
             </SwiperSlide>
           ))}
