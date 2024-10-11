@@ -10,10 +10,10 @@ const ThematicAreas = () => {
   const thematicAreas = [
     {
       title:
-        "Advancing Gender, Health, Economic and Climate Justice for All in Africa",
+        "Advancing Gender, Health, Economic and Climate Justice for All in Africa(AGHECAAJ)",
       points: [
-        "Advancing Gender Equitable Economies, and Gendered Financing for Climate Justice.",
-        "Do-create and Implement multi-country collaboratives and programs for addressing obstacles to maternal, newborn, child, and youth health.",
+        "Advancing Gender Equitable Economies, and Gendered Financing for Climate Justice including the intersection of health and climate justice.",
+        "Co-create and Implement multi-country collaboratives and programs for addressing obstacles to menstrual hygiene, maternal, newborn, child, and youth health.",
         "Develop and Implement an Afri-Institutional Capacity Development – ICD Platform and Fellowships.",
         "Re-imagine Social Sector Development in urban settings through Innovative response to Anti-corruption and Illicit Financial Flows in cities and municipalities.",
       ],
@@ -29,7 +29,7 @@ const ThematicAreas = () => {
       ],
     },
     {
-      title: "Enhancing Leadership for Global Development",
+      title: "Enhancing Research and Leadership for Global Development (ERLGD).",
       points: [
         "Construct a CEDIL Global Center",
         "Establish and Run a Global Leadership Institute includiing Running Annual Leadership and Philanthropic Awards.",

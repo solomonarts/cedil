@@ -54,7 +54,7 @@ export const cardData = [
   {
     title: "Thematic Area 3",
     image: bannerpics["banner7.jpg"],
-    description: "Enhancing Leadership and Research for Global Development(ELGD).",
+    description: "Enhancing Research and Leadership for Global Development (ERLGD).",
   },
 ];
 
