@@ -44,17 +44,17 @@ export const cardData = [
   {
     title: "Thematic Area 1",
     image: bannerpics["banner9.jpg"],
-    description: "Advancing Gender, Health, Economic and Climate Justice for All in Africa",
+    description: "Advancing Gender, Health, Economic and Climate Justice for All in Africa(AGHECAAJ)",
   },
   {
     title: "Thematic Area 2",
     image: bannerpics["banner8.jpg"],
-    description: "Fostering Innovations and Skilling for Development",
+    description: "Fostering Innovations and Skilling for Development(FISD).",
   },
   {
     title: "Thematic Area 3",
     image: bannerpics["banner7.jpg"],
-    description: "Enhancing Leadership For Global Development",
+    description: "Enhancing Leadership and Research for Global Development(ELGD).",
   },
 ];
 
@@ -95,7 +95,7 @@ export const contacts = [
   {
     icon: <SlLocationPin className={s_icon} />,
     label: "USA Office",
-    contact1: "USA: 17906 6th Ave West, Bothell, Washington- USA ",
+    contact1: "USA: 17909 6th Ave West, Bothell, Washington- USA ",
     contact2: "Tel : +1 206 482 5531",
   },
 ];

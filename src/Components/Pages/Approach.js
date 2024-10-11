@@ -171,7 +171,7 @@ const AboutUs = () => {
               learning. */}
               We believe that systems change is an ever-evolving process of
               adaptive experimentation, learning, growth and change and
-              therefore, we work wiith our partners and stakeholders to embrace
+              therefore, we work with our partners and stakeholders to embrace
               these dynamics with agile, flexible, innovative and
               learning-centred approach. We foster strategies for setting clear
               goals and measurement frameworks at the start of any initiative to

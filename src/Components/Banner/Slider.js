@@ -38,9 +38,9 @@ const BannerSlider = () => {
     {
       id: 3,
       title:
-        "Accelerating Transformative Mechanisms for Gender and Climate Justice",
+        "Accelerating Transformative Mechanisms for Gender, Health, Economic and Climate Justice.",
       explainer:
-        "Accelerating Gendered and Equitable Afri-Economic Financing and Growth. Fostering Climate Justice Programs.",
+        "Accelerating Gendered and Equitable Afro-Economic Finance and Growth. Fostering Health and Climate Justice Programs.",
       background: `${bannerpics["banner9.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -66,9 +66,9 @@ const BannerSlider = () => {
     },
     {
       id: 6,
-      title: "Offering Regional and Global space for Leadership Development",
+      title: "Offering Regional and Global space for Research and Leadership Development.",
       explainer:
-        "Strategic Leadership Development and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
+        "Strategic Research and Leadership Development and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
       background: `${bannerpics["banner7.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
