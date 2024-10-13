@@ -14,9 +14,9 @@ const Aboutus3 = () => {
             {/* By using innovative methodologies, CEDIL ensures that programs are
             evidence-based, scalable, and impactful for sustainable development. */}
             We promote locally-owned development solutions and globally tested
-            accountability mechanisms that reduce financing wastage in
-            development institutional systems advancing health, gender, economic
-            and climate Justice.
+            accountability mechanisms that accelerate impact for development
+            institutional systems advancing health, gender, economic and climate
+            Justice.
           </p>
           <p className="description bg-[#05374413] text-left relative">
             {/* By using innovative methodologies, CEDIL ensures that programs are

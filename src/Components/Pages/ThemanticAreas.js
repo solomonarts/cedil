@@ -15,7 +15,7 @@ const ThematicAreas = () => {
         "Advancing Gender Equitable Economies, and Gendered Financing for Climate Justice including the intersection of health and climate justice.",
         "Co-create and Implement multi-country collaboratives and programs for addressing obstacles to menstrual hygiene, maternal, newborn, child, and youth health.",
         "Develop and Implement an Afri-Institutional Capacity Development – ICD Platform and Fellowships.",
-        "Re-imagine Social Sector Development in urban settings through Innovative response to Anti-corruption and Illicit Financial Flows in cities and municipalities.",
+        "Re-imagine Social Sector Development in urban settings that advances women, girls and youth needs through Innovative response to Anti-corruption and Illicit Financial Flows in cities and municipalities.",
       ],
     },
     {
