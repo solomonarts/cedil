@@ -20,7 +20,7 @@ const BannerSlider = () => {
       title:
         "Center for Development Innovations and Leadership (CEDIL) Global.",
       explainer:
-        "A registered international and Africa-Based not-for-profit organization catalyzing systemic change in Africa Cities and Communities through innovative leadership development and rights-based health, economic, gender and climate justice programs for women, girls and youth.",
+        "A registered international and Africa-Based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative leadership development and rights-based health, economic, gender and climate justice programs for women, girls and youth.",
       background: `${bannerpics["banner3.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -40,7 +40,7 @@ const BannerSlider = () => {
       title:
         "Accelerating Transformative Mechanisms for Gender, Health, Economic and Climate Justice.",
       explainer:
-        "Accelerating Gendered and Equitable Afro-Economic Finance and Growth. Fostering Health and Climate Justice Programs.",
+        "Accelerating Gendered and Equitable Afro-Economic Financing and Growth. Fostering Health and Climate Justice Programs.",
       background: `${bannerpics["banner9.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -50,7 +50,7 @@ const BannerSlider = () => {
       title:
         "Fostering an Ecosystem of partnerships for Advancing Rights-Based Innovations and Development Models",
       explainer:
-        "Promoting Innovations, and Technology through Strategic Action Research, Implementation , Policy, Engagement and Evidence Generation.",
+        "Promoting Innovations, Local Solutions, Skilling and Technology through Strategic Action Research, Implementation , Policy, Engagement and Evidence Generation.",
       background: `${bannerpics["banner4.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -59,7 +59,7 @@ const BannerSlider = () => {
       id: 5,
       title: "Advancing Institutional Capacity Strengthening",
       explainer:
-        "Enhancing Competences and Practices for Nonprofits and Public Entities’ Excellence through direct support, technical assistance and strategic consultancy services.",
+        "Enhancing Competences and Organisational Development(OD) Practices for Nonprofits and Public Entities’ Excellence through direct support, technical assistance and strategic consultancy services.",
       background: `${bannerpics["banner5.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -68,7 +68,7 @@ const BannerSlider = () => {
       id: 6,
       title: "Offering Regional and Global space for Research and Leadership Development.",
       explainer:
-        "Strategic Research and Leadership Development and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
+        "Strategic Research and Leadership Development , and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
       background: `${bannerpics["banner7.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",

@@ -168,7 +168,7 @@ export const contentData = {
       page: "our-impact",
       title: "Our Impact",
       description:
-        " CEDIL Global operates in 23 African countries in collaboration with local partners, civil society, universities, and faith-based organizations. Our projects have provided life-changing benefits to women, youth, and children across the continent, fostering sustainable development and equitable growth.",
+        " CEDIL Global operates in 23 African countries in collaboration with local partners, Civil Society, Universities, Urban Cities and Municipalities, Government Ministries and faith-based organizations. Our projects have provided life-changing benefits to women, youth, and children across the continent, fostering sustainable development and equitable growth.",
       background: "bg-[#053744]", // Dark green
       textColor: "text-[#ffffff]", // White text
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],

@@ -45,8 +45,8 @@ const AboutUs = () => {
           <p className="description bg-[#05374413] h-full text-left">
             To foster innovative, locally driven collaboratives and solutions in
             Africa that address the continent's health, gender, economic and
-            climate development challenges through strategic partnerships , Grantmaking,
-            institutional capacity strengthening, research and innovation, and
+            climate development challenges through strategic partnerships, Grantmaking,
+            institutional capacity strengthening, research, skilling and innovation, and
             systems leadership development.
           </p>
         </div>
