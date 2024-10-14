@@ -54,7 +54,7 @@ const AboutUs = () => {
               {/* We engage stakeholders to collaboratively identify complex  shared goals. */}
               We facilitate convenings for stakeholder engagement in identifying
               and responding to complex development problems through agreed
-              shared interests an commitment to systemic change goals.
+              shared interests and commitment to systemic change goals.
             </p>
           </div>
 
@@ -83,7 +83,7 @@ const AboutUs = () => {
               We work with our partners to undertake systems mapping for
               exploring the dynamics, components, actors and influences that are
               responsible for systems failure. We identify the most effective,
-              collective and iterative strategies built into knowledge sharing
+              collective and iterative strategies built into learning, knowledge sharing
               and development, and opportunities for action.
             </p>
           </div>

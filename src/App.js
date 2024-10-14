@@ -8,12 +8,16 @@ import SectionWithPattern from "./Components/Sections/SectionWithPattern";
 import { bannerpics } from "./Constants";
 import AboutUsSingle from "./Components/Pages/AboutSingle";
 import HomePage from "./Components/Pages/HomePage";
+import DonationDrawer from "./Components/Drawer/DonationDrawer";
+import { useState } from "react";
 
 function App() {
+  const [isOpen , setIsOpen] = useState(false)
   return (
     <div className="App">
       <Router>
         <TransparentNavbar />
+        <DonationDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
         <Routes>
           <Route
             path="/*"
@@ -22,7 +26,7 @@ function App() {
                 <div>
                   {/* <HomePage /> */}
 
-                  <Banner />
+                  <Banner setIsOpen={setIsOpen} />
                   {/* First section with Banner */}
                   {/* <ScrollEffect
                     background={bannerpics["banner3.jpg"]}

@@ -8,11 +8,27 @@ import "swiper/css/pagination"; // Pagination module styles
 import "swiper/css/thumbs"; // Thumbs module styles
 import { bannerpics } from "../../Constants";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import MailchimpForm from "../Sections/MailChimpForm";
+import { Button, Modal } from "antd";
 
-const BannerSlider = () => {
+const BannerSlider = ({ setIsOpen }) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleClose = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
 
   const slides = [
     {
@@ -66,7 +82,8 @@ const BannerSlider = () => {
     },
     {
       id: 6,
-      title: "Offering Regional and Global space for Research and Leadership Development.",
+      title:
+        "Offering Regional and Global space for Research and Leadership Development.",
       explainer:
         "Strategic Research and Leadership Development , and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
       background: `${bannerpics["banner7.jpg"]}`,
@@ -108,10 +125,16 @@ const BannerSlider = () => {
                   <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
                   <p className="text-lg mb-6">{slide.explainer}</p>
                   <div className="flex space-x-4">
-                    <button className="bg-[#9ed263] text-black px-6 py-2 rounded-md hover:bg-[#9ed263] transition-all">
+                    <button
+                      className="bg-[#9ed263] text-black px-6 py-2 rounded-md hover:bg-[#9ed263] transition-all"
+                      onClick={() => setIsOpen(true)}
+                    >
                       {slide.cta1}
                     </button>
-                    <button className="bg-transparent border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition-all">
+                    <button
+                      className="bg-transparent border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition-all"
+                      onClick={showModal}
+                    >
                       {slide.cta2}
                     </button>
                   </div>
@@ -158,6 +181,25 @@ const BannerSlider = () => {
           </SwiperSlide>
         ))}
       </Swiper> */}
+
+      {/* Modal Component */}
+      <Modal
+        title="Join Us"
+        open={isModalVisible}
+        onCancel={handleCancel}
+        footer={[
+          <Button key="back" onClick={handleClose}>
+            Close
+          </Button>,
+        ]}
+      >
+        <p className="text-left mb-4 text-[16px]">
+          Subscribe to our newsletter to discover more news, stories, and events
+          about the CEDIL Global Office for Partnerships.
+        </p>
+        {/* Mailchimp Form Component */}
+        <MailchimpForm onClose={handleClose} />
+      </Modal>
     </div>
   );
 };

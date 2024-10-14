@@ -8,8 +8,9 @@ import svgbg2 from "../../Assets/images/icons/tree-of-rectangles-foliage-svgrepo
 import InteractiveDiagram from "../Diagrams/InteractiveDiagram";
 import BannerSlider from "./Slider";
 import { useLocation } from "react-router-dom";
+import DonationDrawer from "../Drawer/DonationDrawer";
 
-const Banner = () => {
+const Banner = ({setIsOpen}) => {
   const location = useLocation();
 
   // Scroll to section when the location hash changes
@@ -36,7 +37,9 @@ const Banner = () => {
           </p>
         </div> */}
 
-      <BannerSlider />
+      <BannerSlider setIsOpen={setIsOpen} />
+
+     
 
       {/* Image with 3D parallax */}
       {/* <div className="image-container"> */}
