@@ -15,7 +15,7 @@ const TeamSection = () => {
     Leadership: [
       {
         name: "Name",
-        title: "Title/Position",
+        title: "CEO and President",
         image: "/path-to-image1.jpg",
         social: {
           facebook: "#",
@@ -26,7 +26,29 @@ const TeamSection = () => {
       },
       {
         name: "Name",
-        title: "Title/Position",
+        title: "VP Programs & Innovations",
+        image: "/path-to-image2.jpg",
+        social: {
+          facebook: "#",
+          linkedin: "#",
+          twitter: "#",
+          instagram: "#",
+        },
+      },
+      {
+        name: "Name",
+        title: "VP Strategic and Global Partnerships",
+        image: "/path-to-image2.jpg",
+        social: {
+          facebook: "#",
+          linkedin: "#",
+          twitter: "#",
+          instagram: "#",
+        },
+      },
+      {
+        name: "Name",
+        title: "VP People and Culture",
         image: "/path-to-image2.jpg",
         social: {
           facebook: "#",

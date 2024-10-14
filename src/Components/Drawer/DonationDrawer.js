@@ -89,6 +89,11 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
                   We count on your support to keep this promise. Click here to
                   read more about our news and stories.
                 </p>
+                <p className="bg-transparent text-[16px]">
+                  Contact us on <a className="text-[#84c5c9] underline" href="mailto:info@cedilglobal.org">info@cedilglobal.org</a> or write to our VP Global
+                  Partnerships at <a className="text-[#84c5c9] underline" href="mailto:vpglobalpartnerships@cedilglobal.org">vpglobalpartnerships@cedilglobal.org</a> if you
+                  would like to fund any component of our programs.
+                </p>
               </div>
               <h2 className="text-2xl font-bold mb-6">Donate Today!</h2>
 
