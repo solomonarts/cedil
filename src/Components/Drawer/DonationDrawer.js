@@ -198,7 +198,7 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
               </div>
 
               {/* Submit Button */}
-              <button className="bg-[#053744] text-white p-3 w-full rounded-md hover:bg-blue-700 transition">
+              <button className="bg-[#053744] text-white p-3 w-full rounded-md hover:bg-[#05374478] transition">
                 Contribute US${donationAmount}
               </button>
             </div>
