@@ -41,11 +41,11 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
         >
           {/* Drawer */}
           <div
-            className="fixed right-0 top-0 h-full overflow-y-scroll bg-white z-50 shadow-lg transition-transform transform translate-x-0"
-            style={{
-              width: "100%", // Mobile
-              maxWidth: "50%", // Desktop
-            }}
+            className="fixed right-0 top-0 h-full overflow-y-scroll w-full md:w-2/3 lg:w-1/2 bg-white z-50 shadow-lg transition-transform transform translate-x-0"
+            // style={{
+            //   width: "100%", // Mobile
+            //   maxWidth: "50%", // Desktop
+            // }}
           >
             {/* Close Button */}
             <button

@@ -56,7 +56,7 @@ const BannerSlider = ({ setIsOpen }) => {
       title:
         "Accelerating Transformative Mechanisms for Gender, Health, Economic and Climate Justice.",
       explainer:
-        "Accelerating Gendered and Equitable Afro-Economic Financing and Growth. Fostering Health and Climate Justice Programs.",
+        "Accelerating Gendered and Equitable Afri-Economic Financing and Growth. Fostering Health and Climate Justice Programs.",
       background: `${bannerpics["banner9.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -195,7 +195,7 @@ const BannerSlider = ({ setIsOpen }) => {
       >
         <p className="text-left mb-4 text-[16px]">
           Subscribe to our newsletter to discover more news, stories, and events
-          about the CEDIL Global Office for Partnerships.
+          about CEDIL Global.
         </p>
         {/* Mailchimp Form Component */}
         <MailchimpForm onClose={handleClose} />
