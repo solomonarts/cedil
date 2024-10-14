@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cedil/static/css/main.e9d98fb6.css",
-    "main.js": "/cedil/static/js/main.87a720a5.js",
+    "main.css": "/cedil/static/css/main.607cf6b8.css",
+    "main.js": "/cedil/static/js/main.72d269aa.js",
     "static/js/453.b3dca186.chunk.js": "/cedil/static/js/453.b3dca186.chunk.js",
     "static/media/cedilgreen.jpg": "/cedil/static/media/cedilgreen.743140be792ff444aea6.jpg",
     "static/media/banner2.jpg": "/cedil/static/media/banner2.2012646b34474400a1c6.jpg",
@@ -22,12 +22,12 @@
     "static/media/circuit-svgrepo-com.svg": "/cedil/static/media/circuit-svgrepo-com.95f0daeb1d4c5971ed0683a04127ceda.svg",
     "index.html": "/cedil/index.html",
     "static/media/pattern.svg": "/cedil/static/media/pattern.0065f13ce8ff4a203e0f.svg",
-    "main.e9d98fb6.css.map": "/cedil/static/css/main.e9d98fb6.css.map",
-    "main.87a720a5.js.map": "/cedil/static/js/main.87a720a5.js.map",
+    "main.607cf6b8.css.map": "/cedil/static/css/main.607cf6b8.css.map",
+    "main.72d269aa.js.map": "/cedil/static/js/main.72d269aa.js.map",
     "453.b3dca186.chunk.js.map": "/cedil/static/js/453.b3dca186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e9d98fb6.css",
-    "static/js/main.87a720a5.js"
+    "static/css/main.607cf6b8.css",
+    "static/js/main.72d269aa.js"
   ]
 }
