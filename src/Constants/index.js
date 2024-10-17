@@ -96,7 +96,7 @@ export const contacts = [
   {
     icon: <SlLocationPin className={s_icon} />,
     label: "USA Office",
-    contact1: "USA: Friends of CEDIL Global USA, 17909 6th Ave West, Bothell, Washington- USA ",
+    contact1: "USA: Friends of CEDIL Global USA, 17909 6th Ave West, Bothell, 98012, Washington- USA ",
     contact2: "Tel : +1 206 482 5531",
   },
 ];
