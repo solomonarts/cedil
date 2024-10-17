@@ -6,13 +6,15 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
+import { bannerpics } from "../../Constants";
+import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
-const TeamSection = () => {
+const TeamSection = ({ level }) => {
   const [selectedTeam, setSelectedTeam] = useState("Leadership");
 
   // Team Data
   const teams = {
-    Leadership: [
+    "Senior Leadership": [
       {
         name: "Name",
         title: "CEO and President",
@@ -58,7 +60,7 @@ const TeamSection = () => {
         },
       },
     ],
-    Management: [
+    "International Advisory Board": [
       {
         name: "Name",
         title: "Title/Position",
@@ -82,7 +84,55 @@ const TeamSection = () => {
         },
       },
     ],
-    Development: [
+    "CEDIL Global Innovation and Research Fellows": [
+      {
+        name: "Name",
+        title: "Title/Position",
+        image: "/path-to-image5.jpg",
+        social: {
+          facebook: "#",
+          linkedin: "#",
+          twitter: "#",
+          instagram: "#",
+        },
+      },
+      {
+        name: "Name",
+        title: "Title/Position",
+        image: "/path-to-image6.jpg",
+        social: {
+          facebook: "#",
+          linkedin: "#",
+          twitter: "#",
+          instagram: "#",
+        },
+      },
+    ],
+    "In-country and Continental Working Groups": [
+      {
+        name: "Name",
+        title: "Title/Position",
+        image: "/path-to-image5.jpg",
+        social: {
+          facebook: "#",
+          linkedin: "#",
+          twitter: "#",
+          instagram: "#",
+        },
+      },
+      {
+        name: "Name",
+        title: "Title/Position",
+        image: "/path-to-image6.jpg",
+        social: {
+          facebook: "#",
+          linkedin: "#",
+          twitter: "#",
+          instagram: "#",
+        },
+      },
+    ],
+    "Careers and Fellowships": [
       {
         name: "Name",
         title: "Title/Position",
@@ -109,10 +159,9 @@ const TeamSection = () => {
   };
 
   return (
-    <div className="container mx-auto py-12">
-      <div className="flex flex-col lg:flex-row">
+    <div className="container">
         {/* Left Column: Vertical Navigation */}
-        <div className="w-1/4">
+        {/* <div className="w-1/4">
           <ul className="text-lg font-semibold">
             {Object.keys(teams).map((team, index) => (
               <li
@@ -126,63 +175,58 @@ const TeamSection = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
-        <div className="w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {teams[selectedTeam].map((member, index) => (
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
+          {teams[level].map((member, index) => (
             <div
               key={index}
-              className="relative bg-white shadow-md w-full rounded-lg overflow-hidden group mx-auto"
+              class="team-card group relative bg-white shadow-lg rounded-lg overflow-hidden min-w-[200px] sm:min-w-[150px] md:min-w-[200px] lg:min-w-[250px] h-80 mx-auto"
             >
-              {/* Card Image */}
-              {/* <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-40 object-cover"
-              /> */}
-              <Avatar
-                showFallback
-                className="m-auto"
-                src="https://images.unsplash.com/broken"
+              {/* <!-- Image (full card) --> */}
+              <img
+                src="https://via.placeholder.com/300x300"
+                alt="User Image"
+                class="h-full w-full object-cover"
               />
-              <div className="p-4 text-center">
-                {/* Member Name & Title */}
-                <h3 className="text-lg font-bold">{member.name}</h3>
-                <p className="text-gray-600 bg-white">{member.title}</p>
-              </div>
-              {/* Social Icons (Initially hidden, appear on hover) */}
-              <div className="absolute bottom-0 left-0 right-0 p-4 flex justify-center space-x-4 bg-transparent group-hover:bg-gray-900 group-hover:pb-8 group-hover:pt-4 group-hover:h-auto transition-all duration-300">
-                <a
-                  href={member.social.facebook}
-                  className="text-white transform translate-y-6 group-hover:translate-y-0 transition-all"
-                >
-                  <FaFacebookF size={20} />
-                </a>
-                <a
-                  href={member.social.linkedin}
-                  className="text-white transform translate-y-6 group-hover:translate-y-0 transition-all"
-                >
-                  <FaLinkedinIn />
-                </a>
-                <a
-                  href={member.social.twitter}
-                  className="text-white transform translate-y-6 group-hover:translate-y-0 transition-all"
-                >
-                  <FaTwitter />
-                </a>
-                <a
-                  href={member.social.instagram}
-                  className="text-white transform translate-y-6 group-hover:translate-y-0 transition-all"
-                >
-                  <FaInstagram />
-                </a>
+
+              {/* <!-- Initial Overlay (white at the bottom) --> */}
+              <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 h-1/2 flex flex-col justify-center items-center px-4 py-8 transition-all duration-500 ease-in-out group-hover:h-full group-hover:bg-black group-hover:bg-opacity-70 group-hover:content-center group-hover:text-white">
+                {/* <!-- Name & Position --> */}
+                <h2 class="font-bold text-lg text-gray-800 group-hover:text-white transition-all duration-500">
+                  {member.name}
+                </h2>
+                <p class="text-sm text-gray-500 group-hover:text-white transition-all duration-500">
+                  {member.title}
+                </p>
+
+                {/* <!-- Social Media Icons --> */}
+                <div class="social-icons mt-4 flex justify-center space-x-4">
+                  <a
+                    href="#"
+                    class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
+                  >
+                    <FaFacebook />
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
+                  >
+                    <FaXTwitter />
+                  </a>
+                  <a
+                    href="#"
+                    class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
+                  >
+                    <FaLinkedin />
+                  </a>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Right Column: Team Member Cards */}
-      </div>
     </div>
   );
 };

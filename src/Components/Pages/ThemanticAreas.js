@@ -4,9 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Thumbs } from "swiper/modules"; // Import Swiper's Thumbs module
 import "swiper/css";
 import "swiper/css/thumbs";
+import { bannerpics } from "../../Constants";
 
 const ThematicAreas = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  const [currentArea, setCurrentArea] = useState(0)
   const thematicAreas = [
     {
       title:
@@ -17,16 +19,18 @@ const ThematicAreas = () => {
         "Develop and Implement an Afri-Institutional Capacity Development – ICD Platform and Fellowships.",
         "Re-imagine Social Sector Development in urban settings that advances women, girls and youth needs through Innovative response to Anti-corruption and Illicit Financial Flows in cities and municipalities.",
       ],
+      image: bannerpics["banner9.jpg"],
     },
     {
       title: "Fostering Innovations and Skilling for Development(FISD).",
       points: [
-        "Co-create Africa Cities Innovations and Employment Hubs to reduce Global North Migration.",
+        "Co-create Africa Cities Innovations, Skilling and Employment Hubs to reduce Global North Migration.",
         "Support Women, Girls and Youth Livelihood and Economic Empowerment Programs.",
         "Run an Afri-Lead Talk Media Channel to highlight Africa Innovations and Developments.",
         "Launch and manage a Flexible Development Innovations Fund for Africa Rockstars.",
         "Promote a Human Rights-Based Approach to Development Programming",
       ],
+      image: bannerpics["banner8.jpg"],
     },
     {
       title: "Enhancing Research and Leadership for Global Development (ERLGD).",
@@ -38,6 +42,7 @@ const ThematicAreas = () => {
         "Develop and Implement Global South-South and Global North-South Research Partnerships and Fellowships.",
         "Establish an Africa Journal for Local Solutions, Innovations, and Leadership Development (AJLSILD)."
       ],
+      image: bannerpics["banner7.jpg"],
     },
   ];
 
@@ -46,10 +51,10 @@ const ThematicAreas = () => {
       <div className="h-1/2 w-full xl:w-2/5 mr-5 relative rounded-md overflow-hidden">
         <div className="absolute h-full w-full bg-black/30 justify-center content-center">
           <h4 className="text-[30px] text-white text-wrap text-center">
-            Thematic Areas
+          Thematic Area {currentArea + 1}
           </h4>
         </div>
-        <img src={themanticpg} />
+        <img src={thematicAreas[currentArea].image} />
       </div>
 
       {/* Right Column: Thematic Areas Slider */}
@@ -107,7 +112,7 @@ const ThematicAreas = () => {
         >
           {thematicAreas.map((area, index) => (
             <SwiperSlide key={index}>
-              <div className="p-2 bg-gray-200 rounded-lg text-center cursor-pointer hover:bg-gray-300">
+              <div className="p-2 bg-gray-200 rounded-lg text-center cursor-pointer hover:bg-gray-300" onClick={()=>setCurrentArea(index)}>
                 <p className="text-sm font-semibold text-wrap line-clamp-3">
                   Thematic Area {index + 1}
                 </p>

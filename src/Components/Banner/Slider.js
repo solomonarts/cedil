@@ -34,9 +34,9 @@ const BannerSlider = ({ setIsOpen }) => {
     {
       id: 1,
       title:
-        "Center for Development Innovations and Leadership (CEDIL) Global.",
+        "Center for Development Innovations and Leadership (CEDIL) Global",
       explainer:
-        "A registered international and Africa-Based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative leadership development and rights-based health, economic, gender and climate justice programs for women, girls and youth.",
+        "A registered international and Africa-based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative leadership development, Skilling and rights-based health, economic, gender and climate justice programs for women, girls and youth",
       background: `${bannerpics["banner3.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -44,9 +44,9 @@ const BannerSlider = ({ setIsOpen }) => {
     {
       id: 2,
       title:
-        "Enhancing Sustainable Systems Leadership and local Solutions for Development.",
+        "Enhancing Sustainable Systems Leadership and Local Solutions for Development",
       explainer:
-        "Co-creating Development Solutions and Programming for Sustainable Systemic Change in Africa.",
+        "Co-creating Development Solutions and Programming for Sustainable Systemic Change in Africa",
       background: `${bannerpics["banner2.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -54,9 +54,9 @@ const BannerSlider = ({ setIsOpen }) => {
     {
       id: 3,
       title:
-        "Accelerating Transformative Mechanisms for Gender, Health, Economic and Climate Justice.",
+        "Accelerating Transformative Mechanisms for Gender, Health, Economic and Climate Justice",
       explainer:
-        "Accelerating Gendered and Equitable Afri-Economic Financing and Growth. Fostering Health and Climate Justice Programs.",
+        "Accelerating Gendered and Equitable Afri-Economic Financing and Growth. Fostering Health and Climate Justice Programs",
       background: `${bannerpics["banner9.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -66,7 +66,7 @@ const BannerSlider = ({ setIsOpen }) => {
       title:
         "Fostering an Ecosystem of partnerships for Advancing Rights-Based Innovations and Development Models",
       explainer:
-        "Promoting Innovations, Local Solutions, Skilling and Technology through Strategic Action Research, Implementation , Policy, Engagement and Evidence Generation.",
+        "Promoting Innovations, Local Solutions, Skilling and Technology through Strategic Action Research, Implementation , Policy, Engagement and Evidence Generation",
       background: `${bannerpics["banner4.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -75,7 +75,7 @@ const BannerSlider = ({ setIsOpen }) => {
       id: 5,
       title: "Advancing Institutional Capacity Strengthening",
       explainer:
-        "Enhancing Competences and Organisational Development(OD) Practices for Nonprofits and Public Entities’ Excellence through direct support, technical assistance and strategic consultancy services.",
+        "Enhancing Competences and Organisational Development(OD) Practices for Nonprofits and Public Entities’ Excellence through direct support, technical assistance and strategic consultancy services",
       background: `${bannerpics["banner5.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -83,9 +83,9 @@ const BannerSlider = ({ setIsOpen }) => {
     {
       id: 6,
       title:
-        "Offering Regional and Global space for Research and Leadership Development.",
+        "Offering Regional and Global space for Research and Leadership Development",
       explainer:
-        "Strategic Research and Leadership Development , and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards.",
+        "Strategic Research and Leadership Development , and Celebrating Non-profit and Philanthropic Excellence through Annual Convenings and Leadership Awards",
       background: `${bannerpics["banner7.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",

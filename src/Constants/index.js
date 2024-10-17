@@ -1,6 +1,7 @@
 import InteractiveDiagram from "../Components/Diagrams/InteractiveDiagram";
 import Leadership from "../Components/Diagrams/Leadership";
 import VennDiagram from "../Components/Diagrams/VennDagram";
+import AboutMenu from "../Components/Pages/AboutMenu";
 import AboutUs from "../Components/Pages/Aboutus";
 import AboutUs2 from "../Components/Pages/Aboutus2";
 import Approach from "../Components/Pages/Approach";
@@ -89,13 +90,13 @@ export const contacts = [
     icon: <SlLocationPin className={s_icon} />,
     label: "Africa Office",
     contact1:
-      "Africa : Plot 2553 and 2554 Nalyamagonja, Gayaza P.O BOX 111430 Kampala Wakiso, Uganda.",
+      "Africa : CEDIL Global Office, Plot 6105 Valley Road, Gayaza Road, Bethel Road, Valley Rd, Nakwero. P.O BOX 111430 Kampala Wakiso, Uganda.",
     contact2: "Tel: +256 767 150 148 / +256 745 987 878",
   },
   {
     icon: <SlLocationPin className={s_icon} />,
     label: "USA Office",
-    contact1: "USA: 17909 6th Ave West, Bothell, Washington- USA ",
+    contact1: "USA: Friends of CEDIL Global USA, 17909 6th Ave West, Bothell, Washington- USA ",
     contact2: "Tel : +1 206 482 5531",
   },
 ];
@@ -119,8 +120,9 @@ export const contentData = {
       svgbg: icons["circuit-svgrepo-com.svg"],
       element: (
         <>
-          <AboutUs2 />
-          <AboutUs />
+          {/* <AboutUs2 />
+          <AboutUs /> */}
+          <AboutMenu />
         </>
       ),
       patternPosition: "left", // Where the pattern is displayed
@@ -183,7 +185,7 @@ export const contentData = {
       page: "theory",
       title: "Our Theory Of Change",
       description:
-        "Using the Development Systems Leadership Model, CEDIL catalyzes institutional and systems-level change across Africa through stakeholder engagement, empowerment, and innovation.",
+        "Using the Development Systems Leadership Model, CEDIL Global catalyzes institutional and systems-level change across Africa through stakeholder engagement, empowerment, and innovation.",
       background: "bg-[#ffffff]", // Dark green
       textColor: "text-[#053744]", // White text
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],
