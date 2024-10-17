@@ -35,8 +35,8 @@ const AboutUsContent = () => (
         </h2>
         <p className="text-gray-700 mt-4 text-[16px] bg-[#05374413]">
           To be the leading catalyst of systemic rights-based development change
-          that embraces leadership for gender, health, climate, and economic
-          justice for all across Africa.
+          that embraces leadership for gender, health, climate and economic
+          justice for all across Africa
         </p>
       </div>
       {/* Mission */}
@@ -46,8 +46,10 @@ const AboutUsContent = () => (
         </h2>
         <p className="text-gray-700 mt-4 text-[16px] bg-[#05374413]">
           To foster innovative, locally driven collaboratives and solutions in
-          Africa that address the continent's health, gender, economic, and
-          climate development challenges.
+          Africa that address the continent's health, gender, economic and
+          climate development challenges through strategic partnerships,
+          grantmaking, institutional capacity strengthening, research, skilling
+          and innovation, and systems leadership development.
         </p>
       </div>
       {/* Values */}
@@ -56,8 +58,10 @@ const AboutUsContent = () => (
           Our Values
         </h2>
         <p className="text-gray-700 mt-4 text-[16px] bg-[#05374413]">
-          At CEDIL Global, we are committed to transparency, accountability,
-          collectivism, and mutual respect.
+          At CEDIL Global we are committed to transparency, accountability ,
+          collectivism, mutual respect and integrity. We recognize and respect
+          diverse groups of individuals and their locally-owned experiences that
+          foster systemic change.
         </p>
       </div>
     </div>
@@ -70,19 +74,25 @@ const AboutUsContent = () => (
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 mt-4">
         <p className="text-gray-700 text-[16px] bg-[#05374413]">
           We promote locally-owned development solutions and globally tested
-          accountability mechanisms.
+          accountability mechanisms that accelerate impact for development
+          institutional systems advancing health, gender, economic and climate
+          Justice.
         </p>
         <p className="text-gray-700 text-[16px] bg-[#05374413]">
           We increase access to flexible development funding through
-          institutional resource mobilization.
+          institutional resource mobilization and fundraising support, and
+          direct grants management.
         </p>
         <p className="text-gray-700 text-[16px] bg-[#05374413]">
-          We provide institutional capacity strengthening support and
-          consultancy services.
+          We provide institutional capacity strengthening support, technical
+          assistance and consultacy services for institutions on the African
+          continent.
         </p>
         <p className="text-gray-700 text-[16px] bg-[#05374413]">
-          We foster strategic collaboratives and partnerships that accelerate
-          widespread actions.
+          We foster strategic collaboratives, and partnerships that accelerate
+          widespread actions for advancing systemic change in health, gender,
+          economic and climate justice at national, regional, and Africa
+          continental levels.
         </p>
       </div>
     </div>
