@@ -91,7 +91,7 @@ const MailchimpForm = ({ onClose }) => {
         loading={loading}
         className="mt-4 rounded-md bg-[#053744] text-white hover:bg-[#05374450] hover:text-[#053744]"
       >
-        Subscribe
+        Yes, Sign me up for emails!
       </Button>
     </form>
   );

@@ -19,8 +19,8 @@ const AboutUsPage = () => {
       submenus: [
         "Senior Leadership",
         "International Advisory Board",
-        "CEDIL Global Innovation and Research Fellows",
-        "In-country and Continental Working Groups",
+        "Innovation and Research Fellows",
+        "Issue-Based Working Groups",
         "Careers and Fellowships",
       ],
     },

@@ -13,13 +13,13 @@ const LeadershipContent = ({selectedSubMenu}) => {
         return <TeamSection level="Senior Leadership" />;
       case "International Advisory Board":
         return <TeamSection level="International Advisory Board" />;
-      case "CEDIL Global Innovation and Research Fellows":
+      case "Innovation and Research Fellows":
         return (
-          <TeamSection level="CEDIL Global Innovation and Research Fellows" />
+          <TeamSection level="Innovation and Research Fellows" />
         );
-      case "In-country and Continental Working Groups":
+      case "Issue-Based Working Groups":
         return (
-          <TeamSection level="In-country and Continental Working Groups" />
+          <TeamSection level="Issue-Based Working Groups" />
         );
       case "Careers and Fellowships":
         return <TeamSection level="Careers and Fellowships" />;

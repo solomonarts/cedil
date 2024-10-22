@@ -84,7 +84,7 @@ const TeamSection = ({ level }) => {
         },
       },
     ],
-    "CEDIL Global Innovation and Research Fellows": [
+    "Innovation and Research Fellows": [
       {
         name: "Name",
         title: "Title/Position",
@@ -108,7 +108,7 @@ const TeamSection = ({ level }) => {
         },
       },
     ],
-    "In-country and Continental Working Groups": [
+    "Issue-Based Working Groups": [
       {
         name: "Name",
         title: "Title/Position",
