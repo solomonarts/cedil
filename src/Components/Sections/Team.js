@@ -50,7 +50,7 @@ const TeamSection = ({ level }) => {
       },
       {
         name: "Name",
-        title: "VP People and Culture",
+        title: "VP Technical Assistance and Consulting",
         image: "/path-to-image2.jpg",
         social: {
           facebook: "#",
