@@ -36,7 +36,7 @@ const BannerSlider = ({ setIsOpen }) => {
       title:
         "Center for Development Innovations and Leadership (CEDIL) Global",
       explainer:
-        "A registered international and Africa-based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative leadership development, Skilling and rights-based health, economic, gender and climate justice programs for women, girls and youth",
+        "A registered international and Africa-based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative leadership development, skilling and rights-based health, economic, gender and climate justice programs for women, girls and youth",
       background: `${bannerpics["banner3.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",

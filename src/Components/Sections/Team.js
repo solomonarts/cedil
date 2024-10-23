@@ -17,7 +17,7 @@ const TeamSection = ({ level }) => {
     "Senior Leadership": [
       {
         name: "Name",
-        title: "CEO and President",
+        title: "President and CEO",
         image: "/path-to-image1.jpg",
         social: {
           facebook: "#",
