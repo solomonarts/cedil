@@ -46,7 +46,7 @@ const TransparentNavbar = () => {
         />
         <Link onClick={() => navigate("#home")}>
           <NavbarBrand>
-            <img src={logos["cediltrans.png"]} alt="Cedil Logo" />
+            <img src={logos["cedilwhite.png"]} alt="Cedil Logo" />
           </NavbarBrand>
         </Link>
       </NavbarContent>
