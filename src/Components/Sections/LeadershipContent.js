@@ -10,18 +10,21 @@ const LeadershipContent = ({ selectedSubMenu }) => {
   }, []);
   const renderLeadershipSection = () => {
     switch (selectedSubMenu) {
-      case "Senior Leadership":
-        return <TeamSection level="Senior Leadership" />;
+      case "Ceo and President":
+        return <TeamSection level="Ceo and President" />;
       case "International Advisory Board":
         return <TeamSection level="International Advisory Board" />;
       case "Innovation and Research Fellows":
         return <TeamSection level="Innovation and Research Fellows" />;
       case "Issue-Based Working Groups":
         return <TeamSection level="Issue-Based Working Groups" />;
-      case "Careers and Fellowships":
+      case "Careers":
         return (
           <div className="flex flex-col gap-5 justify-center h-[40vh] items-center">
-            <FaList size={100} className="text-gray-100" /> <span className="text-gray-400 font-semibold text-[18px]">No Content Yet!</span>{" "}
+            <FaList size={100} className="text-gray-100" />{" "}
+            <span className="text-gray-400 font-semibold text-[18px]">
+              No opporrtunities available
+            </span>{" "}
           </div>
         );
       default:

@@ -2,6 +2,7 @@ import InteractiveDiagram from "../Components/Diagrams/InteractiveDiagram";
 import Leadership from "../Components/Diagrams/Leadership";
 import VennDiagram from "../Components/Diagrams/VennDagram";
 import AboutMenu from "../Components/Pages/AboutMenu";
+import AboutNew from "../Components/Pages/Aboutnew";
 import AboutUs from "../Components/Pages/Aboutus";
 import AboutUs2 from "../Components/Pages/Aboutus2";
 import Approach from "../Components/Pages/Approach";
@@ -37,6 +38,10 @@ export const logos = importAll(
   require.context("../Assets/images/logos", false, /\.(png|jpe?g|svg|webp)$/)
 );
 
+export const teampics = importAll(
+  require.context("../Assets/images/team", false, /\.(png|jpe?g|svg|webp)$/)
+);
+
 export const icons = importAll(
   require.context("../Assets/images/icons", false, /\.(png|jpe?g|svg|webp)$/)
 );
@@ -45,7 +50,8 @@ export const cardData = [
   {
     title: "Thematic Area 1",
     image: bannerpics["banner9.jpg"],
-    description: "Advancing Gender, Health, Economic and Climate Justice for All in Africa(AGHECAAJ)",
+    description:
+      "Advancing Gender, Health, Economic and Climate Justice for All in Africa(AGHECAAJ)",
   },
   {
     title: "Thematic Area 2",
@@ -55,9 +61,50 @@ export const cardData = [
   {
     title: "Thematic Area 3",
     image: bannerpics["banner7.jpg"],
-    description: "Enhancing Research and Leadership for Global Development (ERLGD).",
+    description:
+      "Enhancing Research and Leadership for Global Development (ERLGD).",
   },
 ];
+
+export const leadersData = [
+  {
+    id: 1,
+    name: "Obed Kabanda (PhD)",
+    role: "CEO & President CEDIL Global",
+    image: teampics["ceo.JPG"],
+    bio: "Dr. Obed Kabanda a Seattle University Washington Doctoral Graduate and Global Leadership Fellow, brings over 22 years of experience to CEDIL Global as CEO and President having been part of the global philanthropic ecosystem influencing global aid funding and philanthropic partnerships for over two decades. His passion and experience have been in championing efforts aimed at shifting the way global development funding for gender equality, health, education, economic development, climate action, and other social change funding ecosystems can embrace locally led approaches. He has initiated, developed, and managed strategic bilateral and multilateral funding partnerships with over $200M raised at regional and global levels over 20 years with over 5 nonprofits he has worked with. He has previously worked at Global Fund for Women as Senior Director Global Partnerships and acted as Vice President of the Development Team where he coordinated 6-8 dollar-figure regional and global funding collaboratives. Obed has served as part of the World Bank Civil Society Working Group, UN Technical Working Group, and as a board member to various international organizations. He has stewarded funding cultivation and partnerships from US, EU, Canada, Netherlands, Sweden, and French governments, foundations, and high net worth individuals. Obed has also delivered on international consultancies with UNICEF, UNFPA, Norwegian People’s AID, EARTH University among others. Obed holds a Doctorate of Organizational Learning and Leadership, a Master of Public Health Leadership, a Stanford University Executive Leadership Training for Nonprofit Leaders, a Harvard University Strategic Management Training, and a Bachelors Degree of Community Leadership and Development among others. He prides in being African and supporting nonprofits, Universities, governments, and other private institutions in harnessing existing development opportunities and funding continentally and globally.",
+  },
+  {
+    id: 2,
+    name: "John Smith",
+    role: "International Advisory Board",
+    image: "https://via.placeholder.com/150",
+    bio: "John Smith oversees operational strategy, ensuring efficiency and scalability.",
+  },
+  {
+    id: 3,
+    name: "Sarah Lee",
+    role: "Innovation and Research Fellows",
+    image: "https://via.placeholder.com/150",
+    bio: "Sarah Lee brings extensive governance experience, guiding the strategic direction of our organization.",
+  },
+  {
+    id: 4,
+    name: "Michael Brown",
+    role: "Issue-Based Working Groups",
+    image: "https://via.placeholder.com/150",
+    bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
+  },
+  {
+    id: 5,
+    name: "Michael",
+    role: "Careers",
+    image: "https://via.placeholder.com/150",
+    bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
+  },
+];
+
+export default leadersData;
 
 export const menu = [
   { link: "#home", label: "Home" },
@@ -96,7 +143,8 @@ export const contacts = [
   {
     icon: <SlLocationPin className={s_icon} />,
     label: "USA Office",
-    contact1: "USA: Friends of CEDIL Global USA, 17909 6th Ave West, Bothell, 98012, Washington- USA ",
+    contact1:
+      "USA: Friends of CEDIL Global, 16212 Bothell-Everett Highway Suite #F123, Mill Creek, Washington 98012",
     contact2: "Tel : +1 206 482 5531",
   },
 ];
@@ -122,7 +170,7 @@ export const contentData = {
         <>
           {/* <AboutUs2 />
           <AboutUs /> */}
-          <AboutMenu />
+          <AboutNew />
         </>
       ),
       patternPosition: "left", // Where the pattern is displayed
@@ -136,7 +184,7 @@ export const contentData = {
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],
       element: (
         <>
-          <div className="cards-grid mt-10">
+          <div className="mt-10 cards-grid">
             {cardData.map((card, index) => (
               <SectionCard
                 key={index}

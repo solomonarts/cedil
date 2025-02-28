@@ -8,7 +8,7 @@ import { bannerpics } from "../../Constants";
 
 const ThematicAreas = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  const [currentArea, setCurrentArea] = useState(0)
+  const [currentArea, setCurrentArea] = useState(0);
   const thematicAreas = [
     {
       title:
@@ -18,6 +18,7 @@ const ThematicAreas = () => {
         "Co-create and Implement multi-country collaboratives and programs for addressing obstacles to menstrual hygiene, maternal, newborn, child, and youth health.",
         "Develop and Implement an Afri-Institutional Capacity Development – ICD Platform and Fellowships.",
         "Re-imagine Social Sector Development in urban settings that advances women, girls and youth needs through Innovative response to Anti-corruption and Illicit Financial Flows in cities and municipalities.",
+        // "Under our Gender Equality Program, CEDIL Global is the local distributor of the CouldYou? Cup In East Africa with a focus on Uganda. CouldYou? Cup is tested and innovative tool to enhancing menstrual hygiene among the many girls who for long have been challenged with the issue of period poverty. CEDIL Global is working with CouldYou? Cup to deepen an iterative approach to enhancing menstrual hygiene and are collaborating with NGOs, governments, foundations, businesses, and Rotary International to provide Cups to some of the 2 million women and girls currently on a waitlist.",
       ],
       image: bannerpics["banner9.jpg"],
     },
@@ -33,32 +34,53 @@ const ThematicAreas = () => {
       image: bannerpics["banner8.jpg"],
     },
     {
-      title: "Enhancing Research and Leadership for Global Development (ERLGD).",
+      title:
+        "Enhancing Research and Leadership for Global Development (ERLGD).",
       points: [
         "Construct a CEDIL Global Center",
         "Establish and Run a Global Leadership Institute includiing Running Annual Leadership and Philanthropic Awards.",
         "Run a Certified Nonprofit Executive and Board Leadership Fellowship.",
         "Providing Technical Assistance and Expertise in Fundraising, Strategic Partnerships, and Grants Management Leadership to other Nonprofits and Africa Universities.",
         "Develop and Implement Global South-South and Global North-South Research Partnerships and Fellowships.",
-        "Establish an Africa Journal for Local Solutions, Innovations, and Leadership Development (AJLSILD)."
+        "Establish an Africa Journal for Local Solutions, Innovations, and Leadership Development (AJLSILD).",
       ],
       image: bannerpics["banner7.jpg"],
     },
   ];
 
   return (
-    <div className="thematic-areas-container flex xl:flex-row flex-col mt-10 overflow-hidden">
-      <div className="h-1/2 w-full xl:w-2/5 mr-5 relative rounded-md overflow-hidden">
-        <div className="absolute h-full w-full bg-black/30 justify-center content-center">
-          <h4 className="text-[30px] text-white text-wrap text-center">
-          Thematic Area {currentArea + 1}
+    <div className="flex flex-col mt-10 overflow-hidden thematic-areas-container xl:flex-row">
+      <div className="relative w-full mr-5 overflow-hidden rounded-md h-1/2 xl:w-2/5">
+        <div className="absolute content-center justify-center w-full h-full bg-black/30">
+          <h4
+            className={`text-[30px] text-white text-wrap text-center ${
+              currentArea === 0 && "-m-40"
+            }`}
+          >
+            Thematic Area {currentArea + 1}
           </h4>
         </div>
         <img src={thematicAreas[currentArea].image} />
+        {currentArea === 0 && (
+          <div className="bg-white">
+            <p className="text-[16px] bg-white">
+              Under our Gender Equality Program, CEDIL Global is the local
+              distributor of the CouldYou? Cup In East Africa with a focus on
+              Uganda. CouldYou? Cup is tested and innovative tool to enhancing
+              menstrual hygiene among the many girls who for long have been
+              challenged with the issue of period poverty. CEDIL Global is
+              working with CouldYou? Cup to deepen an iterative approach to
+              enhancing menstrual hygiene and are collaborating with NGOs,
+              governments, foundations, businesses, and Rotary International to
+              provide Cups to some of the 2 million women and girls currently on
+              a waitlist.
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Right Column: Thematic Areas Slider */}
-      <div className="xl:w-1/2 p-4">
+      <div className="p-4 xl:w-1/2">
         {/* Main Slider */}
         <Swiper
           modules={[Thumbs]}
@@ -85,9 +107,9 @@ const ThematicAreas = () => {
                 <polygon points="98,5 94,3 94,7" fill="#6cc644"/>
               </svg> */}
                 </div>
-                <ul className="text-left text-[16px]">
+                <ul className="text-left text-[16px] px-5">
                   {area.points.map((point, i) => (
-                    <li className="border-b-2 border-white" key={i}>
+                    <li className="list-disc border-b-2 border-white" key={i}>
                       {point}
                     </li>
                   ))}
@@ -108,11 +130,14 @@ const ThematicAreas = () => {
           slidesPerView={3}
           spaceBetween={10}
           watchSlidesProgress={true}
-          className="thumbnail-swiper mt-4"
+          className="mt-4 thumbnail-swiper"
         >
           {thematicAreas.map((area, index) => (
             <SwiperSlide key={index}>
-              <div className="p-2 bg-gray-200 rounded-lg text-center cursor-pointer hover:bg-gray-300" onClick={()=>setCurrentArea(index)}>
+              <div
+                className="p-2 text-center bg-gray-200 rounded-lg cursor-pointer hover:bg-gray-300"
+                onClick={() => setCurrentArea(index)}
+              >
                 <p className="text-sm font-semibold text-wrap line-clamp-3">
                   Thematic Area {index + 1}
                 </p>

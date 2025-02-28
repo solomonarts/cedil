@@ -6,19 +6,20 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
-import { bannerpics } from "../../Constants";
+import { bannerpics, teampics } from "../../Constants";
 import { FaFacebook, FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import ceopic from "../../Assets/images/team/ceo.JPG";
 
 const TeamSection = ({ level }) => {
   const [selectedTeam, setSelectedTeam] = useState("Leadership");
 
   // Team Data
   const teams = {
-    "Senior Leadership": [
+    "Ceo and President": [
       {
         name: "Name",
-        title: "President and CEO",
-        image: "/path-to-image1.jpg",
+        title: "Ceo and President",
+        image: ceopic,
         social: {
           facebook: "#",
           linkedin: "#",
@@ -108,31 +109,31 @@ const TeamSection = ({ level }) => {
         },
       },
     ],
-    "Issue-Based Working Groups": [
-      {
-        name: "Name",
-        title: "Title/Position",
-        image: "/path-to-image5.jpg",
-        social: {
-          facebook: "#",
-          linkedin: "#",
-          twitter: "#",
-          instagram: "#",
-        },
-      },
-      {
-        name: "Name",
-        title: "Title/Position",
-        image: "/path-to-image6.jpg",
-        social: {
-          facebook: "#",
-          linkedin: "#",
-          twitter: "#",
-          instagram: "#",
-        },
-      },
-    ],
-    "Careers and Fellowships": [
+    // "Issue-Based Working Groups": [
+    //   {
+    //     name: "Name",
+    //     title: "Title/Position",
+    //     image: "/path-to-image5.jpg",
+    //     social: {
+    //       facebook: "#",
+    //       linkedin: "#",
+    //       twitter: "#",
+    //       instagram: "#",
+    //     },
+    //   },
+    //   {
+    //     name: "Name",
+    //     title: "Title/Position",
+    //     image: "/path-to-image6.jpg",
+    //     social: {
+    //       facebook: "#",
+    //       linkedin: "#",
+    //       twitter: "#",
+    //       instagram: "#",
+    //     },
+    //   },
+    // ],
+    Careers: [
       {
         name: "Name",
         title: "Title/Position",
@@ -160,8 +161,8 @@ const TeamSection = ({ level }) => {
 
   return (
     <div className="container">
-        {/* Left Column: Vertical Navigation */}
-        {/* <div className="w-1/4">
+      {/* Left Column: Vertical Navigation */}
+      {/* <div className="w-1/4">
           <ul className="text-lg font-semibold">
             {Object.keys(teams).map((team, index) => (
               <li
@@ -177,56 +178,56 @@ const TeamSection = ({ level }) => {
           </ul>
         </div> */}
 
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10">
-          {teams[level].map((member, index) => (
-            <div
-              key={index}
-              class="team-card group relative bg-white shadow-lg rounded-lg overflow-hidden min-w-[200px] sm:min-w-[150px] md:min-w-[200px] lg:min-w-[250px] h-80 mx-auto"
-            >
-              {/* <!-- Image (full card) --> */}
-              <img
-                src="https://via.placeholder.com/300x300"
-                alt="User Image"
-                class="h-full w-full object-cover"
-              />
+      <div className="grid w-full grid-cols-1 gap-10 sm:grid-cols-2 xl:grid-cols-4">
+        {teams[level].map((member, index) => (
+          <div
+            key={index}
+            class="team-card group relative bg-white shadow-lg rounded-lg overflow-hidden min-w-[200px] sm:min-w-[150px] md:min-w-[200px] lg:min-w-[250px] h-80 mx-auto"
+          >
+            {/* <!-- Image (full card) --> */}
+            <img
+              src={member.image}
+              alt="User Image"
+              class="h-full w-full object-contain"
+            />
 
-              {/* <!-- Initial Overlay (white at the bottom) --> */}
-              <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 h-1/2 flex flex-col justify-center items-center px-4 py-8 transition-all duration-500 ease-in-out group-hover:h-full group-hover:bg-black group-hover:bg-opacity-70 group-hover:content-center group-hover:text-white">
-                {/* <!-- Name & Position --> */}
-                <h2 class="font-bold text-lg text-gray-800 group-hover:text-white transition-all duration-500">
-                  {member.name}
-                </h2>
-                <p class="text-sm text-gray-500 group-hover:text-white transition-all duration-500">
-                  {member.title}
-                </p>
+            {/* <!-- Initial Overlay (white at the bottom) --> */}
+            <div class="absolute bottom-0 left-0 right-0 bg-white bg-opacity-90 h-1/2 flex flex-col justify-center items-center px-4 py-8 transition-all duration-500 ease-in-out group-hover:h-full group-hover:bg-black group-hover:bg-opacity-70 group-hover:content-center group-hover:text-white">
+              {/* <!-- Name & Position --> */}
+              <h2 class="font-bold text-lg text-gray-800 group-hover:text-white transition-all duration-500">
+                {member.name}
+              </h2>
+              <p class="text-sm text-gray-500 group-hover:text-white transition-all duration-500">
+                {member.title}
+              </p>
 
-                {/* <!-- Social Media Icons --> */}
-                <div class="social-icons mt-4 flex justify-center space-x-4">
-                  <a
-                    href="#"
-                    class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
-                  >
-                    <FaFacebook />
-                  </a>
-                  <a
-                    href="#"
-                    class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
-                  >
-                    <FaXTwitter />
-                  </a>
-                  <a
-                    href="#"
-                    class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
-                  >
-                    <FaLinkedin />
-                  </a>
-                </div>
+              {/* <!-- Social Media Icons --> */}
+              <div class="social-icons mt-4 flex justify-center space-x-4">
+                <a
+                  href="#"
+                  class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
+                >
+                  <FaFacebook />
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
+                >
+                  <FaXTwitter />
+                </a>
+                <a
+                  href="#"
+                  class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
+                >
+                  <FaLinkedin />
+                </a>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
-        {/* Right Column: Team Member Cards */}
+      {/* Right Column: Team Member Cards */}
     </div>
   );
 };

@@ -10,9 +10,10 @@ import AboutUsSingle from "./Components/Pages/AboutSingle";
 import HomePage from "./Components/Pages/HomePage";
 import DonationDrawer from "./Components/Drawer/DonationDrawer";
 import { useState } from "react";
+import Leadership from "./Components/Pages/Leadership";
 
 function App() {
-  const [isOpen , setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
       <Router>
@@ -48,6 +49,7 @@ function App() {
               </>
             }
           />
+          <Route path="/leadership/:id" element={<Leadership />} />
           <Route path="/about-us" element={<AboutUsSingle />} />
         </Routes>
       </Router>

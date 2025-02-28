@@ -17,11 +17,11 @@ const AboutUsPage = () => {
     {
       title: "Leadership",
       submenus: [
-        "Senior Leadership",
+        "Ceo and President",
         "International Advisory Board",
         "Innovation and Research Fellows",
-        "Issue-Based Working Groups",
-        "Careers and Fellowships",
+        // "Issue-Based Working Groups",
+        "Careers",
       ],
     },
   ];
@@ -43,7 +43,7 @@ const AboutUsPage = () => {
       <div class="w-full md:w-1/5 md:min-w-1/5 hidden xl:grid">
         {/* Sidebar (Left Menu) */}
 
-        <Sider width={300} className="site-layout-background mx-auto mt-10">
+        <Sider width={300} className="mx-auto mt-10 site-layout-background">
           <Menu
             mode="inline"
             defaultSelectedKeys={["about"]}
@@ -99,12 +99,12 @@ const AboutUsPage = () => {
       {/* <!-- Right Column: 80% width --> */}
       <div class="w-full lg:w-4/5 md:min-w-[60vw] p-4 mx-auto">
         {/* Content Section (Right Content) */}
-        <div className="flex-1 ml-0 md:ml-1/4 lg:ml-1/5 bg-white p-6">
+        <div className="flex-1 p-6 ml-0 bg-white md:ml-1/4 lg:ml-1/5">
           {/* Menu Toggle for Mobile */}
-          <div className="flex xl:hidden mb-4 justify-end">
+          <div className="flex justify-end mb-4 xl:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="p-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 z-50"
+              className="z-50 p-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200"
             >
               <MenuOutlined className="text-2xl" />
             </button>
@@ -113,7 +113,7 @@ const AboutUsPage = () => {
               <div className="fixed z-40">
                 <Sider
                   width={300}
-                  className="site-layout-background mx-auto mt-10"
+                  className="mx-auto mt-10 site-layout-background"
                 >
                   <Menu
                     mode="inline"

@@ -36,12 +36,12 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
       {isOpen && (
         <div
           id="drawerOverlay"
-          className="fixed inset-0 bg-black bg-opacity-50 z-40"
+          className="fixed inset-0 z-40 bg-black bg-opacity-50"
           onClick={handleClickOutside}
         >
           {/* Drawer */}
           <div
-            className="fixed right-0 top-0 h-full overflow-y-scroll w-full md:w-2/3 lg:w-1/2 bg-white z-50 shadow-lg transition-transform transform translate-x-0"
+            className="fixed top-0 right-0 z-50 w-full h-full overflow-y-scroll transition-transform transform translate-x-0 bg-white shadow-lg md:w-2/3 lg:w-1/2"
             // style={{
             //   width: "100%", // Mobile
             //   maxWidth: "50%", // Desktop
@@ -50,7 +50,7 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
             {/* Close Button */}
             <button
               onClick={toggleDrawer}
-              className="absolute top-4 right-4 text-gray-600 hover:text-gray-800"
+              className="absolute text-gray-600 top-4 right-4 hover:text-gray-800"
             >
               &#10005;
             </button>
@@ -86,16 +86,28 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
                 </p>
 
                 <p className="bg-transparent text-[16px]">
-                  We count on your support to keep this promise. Click here to
-                  read more about our news and stories.
+                  We count on your support to keep this promise.
+                  {/* Click here to read more about our news and stories. */}
                 </p>
                 <p className="bg-transparent text-[16px]">
-                  Contact us on <a className="text-[#84c5c9] underline" href="mailto:info@cedilglobal.org">info@cedilglobal.org</a> or write to our VP Global
-                  Partnerships at <a className="text-[#84c5c9] underline" href="mailto:vpglobalpartnerships@cedilglobal.org">vpglobalpartnerships@cedilglobal.org</a> if you
-                  would like to fund any component of our programs.
+                  Contact us on{" "}
+                  <a
+                    className="text-[#84c5c9] underline"
+                    href="mailto:info@cedilglobal.org"
+                  >
+                    info@cedilglobal.org
+                  </a>{" "}
+                  or write to our VP Global Partnerships at{" "}
+                  <a
+                    className="text-[#84c5c9] underline"
+                    href="mailto:vpglobalpartnerships@cedilglobal.org"
+                  >
+                    vpstrategicpartnerships@cedilglobal.org
+                  </a>{" "}
+                  if you would like to fund any component of our programs.
                 </p>
               </div>
-              <h2 className="text-2xl font-bold mb-6">Donate Today!</h2>
+              <h2 className="mb-6 text-2xl font-bold">Donate Today!</h2>
 
               {/* Preset Amounts */}
               <div className="grid grid-cols-3 gap-4 mb-6">
@@ -124,7 +136,7 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
                 {/* Custom Amount Input */}
                 <input
                   type="number"
-                  className="border rounded-md p-3 w-full text-center"
+                  className="w-full p-3 text-center border rounded-md"
                   placeholder="Enter Amount"
                   value={customAmount}
                   onChange={handleCustomAmountChange}
@@ -132,73 +144,73 @@ const DonationDrawer = ({ isOpen, setIsOpen }) => {
               </div>
 
               {/* Contact Information */}
-              <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
+              <h2 className="mb-4 text-2xl font-bold">Contact Information</h2>
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
               </div>
               <div className="mb-4">
                 <input
                   type="text"
                   placeholder="Street Address"
-                  className="border p-2 rounded-md w-full"
+                  className="w-full p-2 border rounded-md"
                 />
               </div>
               <div className="grid grid-cols-3 gap-4 mb-4">
                 <input
                   type="text"
                   placeholder="Postal Code"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
                 <input
                   type="text"
                   placeholder="City"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
                 <input
                   type="text"
                   placeholder="State/Province"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4 mb-6">
                 <input
                   type="email"
                   placeholder="Email"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
                 <input
                   type="tel"
                   placeholder="Phone (optional)"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
               </div>
 
               {/* Payment Information */}
-              <h2 className="text-2xl font-bold mb-4">Payment Information</h2>
+              <h2 className="mb-4 text-2xl font-bold">Payment Information</h2>
               <div className="grid grid-cols-3 gap-4 mb-4">
                 <input
                   type="text"
                   placeholder="Card Number"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
                 <input
                   type="text"
                   placeholder="Expiration Date"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
                 <input
                   type="text"
                   placeholder="Security Code"
-                  className="border p-2 rounded-md"
+                  className="p-2 border rounded-md"
                 />
               </div>
 

@@ -3,7 +3,7 @@
 // import { Card } from 'antd';
 
 // const AboutUsContent = () => (
-//     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
 //         <Card title="Our Vision">
 //             To be the leading catalyst of systemic rights-based development change that embraces leadership for gender, health, climate, and economic justice for all across Africa.
 //         </Card>
@@ -25,11 +25,11 @@
 import React from "react";
 
 const AboutUsContent = () => (
-  <section className="max-w-7xl mx-auto">
+  <section className="mx-auto max-w-7xl">
     {/* Vision, Mission, Values Section */}
-    <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 mb-12">
+    <div className="grid grid-cols-1 gap-6 mb-12 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
       {/* Vision */}
-      <div className="p-4 shadow-md rounded-lg">
+      <div className="p-2 rounded-lg shadow-md">
         <h2 className="font-semibold text-lg text-center text-white bg-[#053744] py-2 rounded">
           Our Vision
         </h2>
@@ -40,7 +40,7 @@ const AboutUsContent = () => (
         </p>
       </div>
       {/* Mission */}
-      <div className="p-4 shadow-md rounded-lg">
+      <div className="p-2 rounded-lg shadow-md">
         <h2 className="font-semibold text-lg text-center text-white bg-[#053744] py-2 rounded">
           Our Mission
         </h2>
@@ -53,7 +53,7 @@ const AboutUsContent = () => (
         </p>
       </div>
       {/* Values */}
-      <div className="p-4 shadow-md rounded-lg">
+      <div className="p-2 rounded-lg shadow-md">
         <h2 className="font-semibold text-lg text-center text-white bg-[#053744] py-2 rounded">
           Our Values
         </h2>
@@ -67,11 +67,11 @@ const AboutUsContent = () => (
     </div>
 
     {/* What We Do Section */}
-    <div className="p-6 shadow-md rounded-lg mb-8">
+    <div className="p-2 mb-8 rounded-lg shadow-md">
       <h2 className="font-semibold text-lg text-center text-white bg-[#053744] py-2 rounded">
         What We Do
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 mt-4">
+      <div className="grid grid-cols-1 gap-6 mt-4 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4">
         <p className="text-gray-700 text-[16px] bg-[#05374413]">
           We promote locally-owned development solutions and globally tested
           accountability mechanisms that accelerate impact for development
