@@ -187,7 +187,7 @@ const TransparentNavbar = () => {
                   : "foreground"
               }
               className="w-full"
-              href={`${item.link}`}
+              href={`/${item.link}`}
               size="lg"
             >
               {item.label}

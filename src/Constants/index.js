@@ -113,6 +113,7 @@ export const menu = [
   { link: "#how-we-work", label: "How we Work" },
   { link: "#our-impact", label: "Our Impact" },
   { link: "#theory", label: "Theory" },
+  { link: "news-page", label: "News" },
   { link: "#contact-us", label: "Contact" },
 ];
 
