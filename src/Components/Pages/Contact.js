@@ -233,16 +233,18 @@ const Footer = () => {
                 info@cedilglobal.org
               </a>
             </p>
-            <p className="flex gap-4 mt-3">
-              <FaLocationArrow size={28} /> Africa: CEDIL Global Office, Kampala
-              Wakiso, Uganda.
+            <p className="flex gap-4 mt-3 text-left">
+              <FaLocationArrow size={30} /> Plot 6105 Valley Road, Gayaza Road,
+              Bethel Road, Valley Rd, Nakwero. P.O BOX 111430 Kampala Wakiso,
+              Uganda.
             </p>
             <p className="flex gap-4 mt-1">
               <FaPhone /> +256 767 150 148 / +256 745 987 878
             </p>
-            <p className="flex gap-4 mt-3">
-              <FaLocationArrow size={28} /> USA: 16212 Bothell-Everett Highway
-              Suite #F123, Mill Creek, WA 98012
+            <p className="flex gap-4 mt-3 text-left">
+              <FaLocationArrow size={30} /> USA: Friends of CEDIL Global USA,
+              16212 Bothell-Everett Highway Suite #F123, Mill Creek, Washington
+              98012
             </p>
             <p className="flex gap-4 mt-1">
               <FaPhone /> +1 206 482 5531

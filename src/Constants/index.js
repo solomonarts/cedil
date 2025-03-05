@@ -70,7 +70,7 @@ export const leadersData = [
   {
     id: 1,
     name: "Obed Kabanda (PhD)",
-    role: "CEO & President CEDIL Global",
+    role: "CEO & President",
     image: teampics["ceo.JPG"],
     bio: "Dr. Obed Kabanda a Seattle University Washington Doctoral Graduate and Global Leadership Fellow, brings over 22 years of experience to CEDIL Global as CEO and President having been part of the global philanthropic ecosystem influencing global aid funding and philanthropic partnerships for over two decades. His passion and experience have been in championing efforts aimed at shifting the way global development funding for gender equality, health, education, economic development, climate action, and other social change funding ecosystems can embrace locally led approaches. He has initiated, developed, and managed strategic bilateral and multilateral funding partnerships with over $200M raised at regional and global levels over 20 years with over 5 nonprofits he has worked with. He has previously worked at Global Fund for Women as Senior Director Global Partnerships and acted as Vice President of the Development Team where he coordinated 6-8 dollar-figure regional and global funding collaboratives. Obed has served as part of the World Bank Civil Society Working Group, UN Technical Working Group, and as a board member to various international organizations. He has stewarded funding cultivation and partnerships from US, EU, Canada, Netherlands, Sweden, and French governments, foundations, and high net worth individuals. Obed has also delivered on international consultancies with UNICEF, UNFPA, Norwegian People’s AID, EARTH University among others. Obed holds a Doctorate of Organizational Learning and Leadership, a Master of Public Health Leadership, a Stanford University Executive Leadership Training for Nonprofit Leaders, a Harvard University Strategic Management Training, and a Bachelors Degree of Community Leadership and Development among others. He prides in being African and supporting nonprofits, Universities, governments, and other private institutions in harnessing existing development opportunities and funding continentally and globally.",
   },
@@ -88,15 +88,15 @@ export const leadersData = [
     image: "https://via.placeholder.com/150",
     bio: "Sarah Lee brings extensive governance experience, guiding the strategic direction of our organization.",
   },
+  // {
+  //   id: 4,
+  //   name: "Michael Brown",
+  //   role: "Issue-Based Working Groups",
+  //   image: "https://via.placeholder.com/150",
+  //   bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
+  // },
   {
     id: 4,
-    name: "Michael Brown",
-    role: "Issue-Based Working Groups",
-    image: "https://via.placeholder.com/150",
-    bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
-  },
-  {
-    id: 5,
     name: "Michael",
     role: "Careers",
     image: "https://via.placeholder.com/150",

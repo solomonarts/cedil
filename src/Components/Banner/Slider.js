@@ -33,10 +33,9 @@ const BannerSlider = ({ setIsOpen }) => {
   const slides = [
     {
       id: 1,
-      title:
-        "Center for Development Innovations and Leadership (CEDIL) Global",
+      title: "Center for Development Innovations and Leadership (CEDIL) Global",
       explainer:
-        "A registered international and Africa-based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative leadership development, skilling and rights-based health, economic, gender and climate justice programs for women, girls and youth",
+        "A registered international and Africa-based not-for-profit organization catalyzing systemic change in Africa communities and ubarn settings through innovative philanthropy and financing mechanisms, leadership development, skilling and rights-based health, economic, gender and climate justice programs for women, girls and youth",
       background: `${bannerpics["banner3.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -46,7 +45,7 @@ const BannerSlider = ({ setIsOpen }) => {
       title:
         "Enhancing Sustainable Systems Leadership and Local Solutions for Development",
       explainer:
-        "Co-creating Development Solutions and Programming for Sustainable Systemic Change in Africa",
+        "Co-creating Development Solutions, Financing Mechanisms and Programming for Sustainable Systemic Change in Africa",
       background: `${bannerpics["banner2.jpg"]}`,
       cta1: "Donate",
       cta2: "Join Us",
@@ -116,14 +115,14 @@ const BannerSlider = ({ setIsOpen }) => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="relative w-full h-full bg-cover bg-center flex items-center"
+              className="relative flex items-center w-full h-full bg-center bg-cover"
               style={{ backgroundImage: `url(${slide.background})` }}
             >
-              <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
-              <div className="container mx-auto px-4 z-20">
-                <div className="text-white max-w-lg">
-                  <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
-                  <p className="text-lg mb-6">{slide.explainer}</p>
+              <div className="absolute inset-0 z-10 bg-black bg-opacity-50" />
+              <div className="container z-20 px-4 mx-auto">
+                <div className="max-w-lg text-white">
+                  <h2 className="mb-4 text-4xl font-bold">{slide.title}</h2>
+                  <p className="mb-6 text-lg">{slide.explainer}</p>
                   <div className="flex space-x-4">
                     <button
                       className="bg-[#9ed263] text-black px-6 py-2 rounded-md hover:bg-[#9ed263] transition-all"
@@ -132,7 +131,7 @@ const BannerSlider = ({ setIsOpen }) => {
                       {slide.cta1}
                     </button>
                     <button
-                      className="bg-transparent border border-white text-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition-all"
+                      className="px-6 py-2 text-white transition-all bg-transparent border border-white rounded-md hover:bg-white hover:text-black"
                       onClick={showModal}
                     >
                       {slide.cta2}
@@ -147,18 +146,18 @@ const BannerSlider = ({ setIsOpen }) => {
         {/* Custom Navigation Buttons */}
         <div
           ref={prevRef}
-          className="absolute top-1/2 left-5 z-30 -translate-y-1/2"
+          className="absolute z-30 -translate-y-1/2 top-1/2 left-5"
         >
-          <button className="p-2 rounded-full flex justify-center w-10 h-auto aspect-square content-center bg-black bg-opacity-50 hover:bg-opacity-75 transition">
-            <FaChevronLeft className="text-white m-auto" />
+          <button className="flex content-center justify-center w-10 h-auto p-2 transition bg-black bg-opacity-50 rounded-full aspect-square hover:bg-opacity-75">
+            <FaChevronLeft className="m-auto text-white" />
           </button>
         </div>
         <div
           ref={nextRef}
-          className="absolute top-1/2 right-5 z-30 -translate-y-1/2"
+          className="absolute z-30 -translate-y-1/2 top-1/2 right-5"
         >
-          <button className="p-2 rounded-full flex justify-center w-10 h-auto aspect-square content-center bg-black bg-opacity-50 hover:bg-opacity-75 transition">
-            <FaChevronRight className="text-white m-auto" />
+          <button className="flex content-center justify-center w-10 h-auto p-2 transition bg-black bg-opacity-50 rounded-full aspect-square hover:bg-opacity-75">
+            <FaChevronRight className="m-auto text-white" />
           </button>
         </div>
       </Swiper>
@@ -175,7 +174,7 @@ const BannerSlider = ({ setIsOpen }) => {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full bg-center bg-cover"
               style={{ backgroundImage: `url(${slide.background})` }}
             />
           </SwiperSlide>
