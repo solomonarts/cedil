@@ -11,6 +11,7 @@ import HomePage from "./Components/Pages/HomePage";
 import DonationDrawer from "./Components/Drawer/DonationDrawer";
 import { useState } from "react";
 import Leadership from "./Components/Pages/Leadership";
+import NewsPage from "./Components/Pages/NewsPage";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,6 +52,7 @@ function App() {
           />
           <Route path="/leadership/:id" element={<Leadership />} />
           <Route path="/about-us" element={<AboutUsSingle />} />
+          <Route path="/news-page" element={<NewsPage />} />
         </Routes>
       </Router>
     </div>

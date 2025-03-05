@@ -148,6 +148,19 @@ const TransparentNavbar = () => {
 
         <NavbarItem>
           <Link
+            className={`navbar-link text-white`}
+            isActive={location.hash === "news-page"}
+            onClick={() => navigate("/news-page")}
+            css={{
+              "&:hover": { color: "#84c5c9" },
+            }}
+          >
+            News
+          </Link>
+        </NavbarItem>
+
+        <NavbarItem>
+          <Link
             className={`navbar-link ${
               location.hash === "#contact-us" ? "text-[#84c5c9]" : "text-white"
             }`}
