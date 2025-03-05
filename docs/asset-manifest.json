@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/cedil/static/css/main.710cbd39.css",
+    "main.js": "/cedil/static/js/main.2a64f925.js",
+    "static/js/453.b3dca186.chunk.js": "/cedil/static/js/453.b3dca186.chunk.js",
+    "static/media/cedilgreen.jpg": "/cedil/static/media/cedilgreen.743140be792ff444aea6.jpg",
+    "static/media/ceo.JPG": "/cedil/static/media/ceo.fbeb0354ea9ae15b2025.JPG",
+    "static/media/banner2.jpg": "/cedil/static/media/banner2.2012646b34474400a1c6.jpg",
+    "static/media/banner4.jpg": "/cedil/static/media/banner4.e869fbbb69946765e49f.jpg",
+    "static/media/banner3.jpg": "/cedil/static/media/banner3.1cea88d042b527fad38e.jpg",
+    "static/media/cedil.png": "/cedil/static/media/cedil.1edb439c3c8bfa5a0f9f.png",
+    "static/media/Sofia Pro Bold Az.otf": "/cedil/static/media/Sofia Pro Bold Az.48c71aa3dea90cd4f94e.otf",
+    "static/media/Sofia Pro Light Az.otf": "/cedil/static/media/Sofia Pro Light Az.9a65952e76032af94519.otf",
+    "static/media/banner1.jpg": "/cedil/static/media/banner1.c1c854ddc6081b81d1e5.jpg",
+    "static/media/banner5.jpg": "/cedil/static/media/banner5.23bb4a90eef19e1dc3df.jpg",
+    "static/media/banner7.jpg": "/cedil/static/media/banner7.586f285a7b11740338b7.jpg",
+    "static/media/banner8.jpg": "/cedil/static/media/banner8.fe805a66e33dd81058d3.jpg",
+    "static/media/banner.jpg": "/cedil/static/media/banner.ed4f3a78eac997c9b5d4.jpg",
+    "static/media/banner9.jpg": "/cedil/static/media/banner9.ed4f3a78eac997c9b5d4.jpg",
+    "static/media/cedilwhite.png": "/cedil/static/media/cedilwhite.ccc1d3243e18bdde4539.png",
+    "static/media/banner6.jpg": "/cedil/static/media/banner6.7d189aac45aad5878a99.jpg",
+    "static/media/cediltrans.png": "/cedil/static/media/cediltrans.88f7ac82fd26ba8dcf67.png",
+    "static/media/tree-of-rectangles-foliage-svgrepo-com.svg": "/cedil/static/media/tree-of-rectangles-foliage-svgrepo-com.b6ec4193bcc071c92bc171ca55e6491e.svg",
+    "static/media/circuit-svgrepo-com.svg": "/cedil/static/media/circuit-svgrepo-com.95f0daeb1d4c5971ed0683a04127ceda.svg",
+    "index.html": "/cedil/index.html",
+    "static/media/pattern.svg": "/cedil/static/media/pattern.0065f13ce8ff4a203e0f.svg",
+    "main.710cbd39.css.map": "/cedil/static/css/main.710cbd39.css.map",
+    "main.2a64f925.js.map": "/cedil/static/js/main.2a64f925.js.map",
+    "453.b3dca186.chunk.js.map": "/cedil/static/js/453.b3dca186.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.710cbd39.css",
+    "static/js/main.2a64f925.js"
+  ]
+}
