@@ -59,7 +59,7 @@ const TransparentNavbar = () => {
                 ? "text-[#84c5c9]"
                 : "text-white"
             }`}
-            isActive={(location.pathname === "") | (location.hash === "#home")}
+            // isActive={(location.pathname === "") | (location.hash === "#home")}
             onClick={() => navigate("/#home")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -74,7 +74,7 @@ const TransparentNavbar = () => {
             className={`navbar-link ${
               location.hash === "#about-us" ? "text-[#84c5c9]" : "text-white"
             }`}
-            isActive={location.hash === "#about-us"}
+            // isActive={location.hash === "#about-us"}
             onClick={() => navigate("/#about-us")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -91,7 +91,7 @@ const TransparentNavbar = () => {
                 ? "text-[#84c5c9]"
                 : "text-white"
             }`}
-            isActive={location.hash === "#our-programs"}
+            // isActive={location.hash === "#our-programs"}
             onClick={() => navigate("/#our-programs")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -106,7 +106,7 @@ const TransparentNavbar = () => {
             className={`navbar-link ${
               location.hash === "#how-we-work" ? "text-[#84c5c9]" : "text-white"
             }`}
-            isActive={location.hash === "#how-we-work"}
+            // isActive={location.hash === "#how-we-work"}
             onClick={() => navigate("/#how-we-work")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -121,7 +121,7 @@ const TransparentNavbar = () => {
             className={`navbar-link ${
               location.hash === "#our-impact" ? "text-[#84c5c9]" : "text-white"
             }`}
-            isActive={location.hash === "#our-impact"}
+            // isActive={location.hash === "#our-impact"}
             onClick={() => navigate("/#our-impact")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -136,7 +136,7 @@ const TransparentNavbar = () => {
             className={`navbar-link ${
               location.hash === "#theory" ? "text-[#84c5c9]" : "text-white"
             }`}
-            isActive={location.hash === "#theory"}
+            // isActive={location.hash === "#theory"}
             onClick={() => navigate("/#theory")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -149,7 +149,7 @@ const TransparentNavbar = () => {
         <NavbarItem>
           <Link
             className={`navbar-link text-white`}
-            isActive={location.hash === "news-page"}
+            // isActive={location.hash === "news-page"}
             onClick={() => navigate("/news-page")}
             css={{
               "&:hover": { color: "#84c5c9" },
@@ -164,7 +164,7 @@ const TransparentNavbar = () => {
             className={`navbar-link ${
               location.hash === "#contact-us" ? "text-[#84c5c9]" : "text-white"
             }`}
-            isActive={location.hash === "#contact-us"}
+            // isActive={location.hash === "#contact-us"}
             onClick={() => navigate("/#contact-us")}
             css={{
               "&:hover": { color: "#84c5c9" },
