@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-import blogpic1 from "../../Assets/images/banner/banner3.jpg";
+import blogpic1 from "../../Assets/images/news/PHOTO-2025-02-25-17-28-13.jpg";
 import blogpic2 from "../../Assets/images/banner/banner4.jpg";
 // import "./News.scss";
 
@@ -40,7 +40,7 @@ const NewsPage = () => {
           <img
             src={selectedNews.image}
             alt={selectedNews.title}
-            className="object-cover w-full rounded-lg h-72"
+            className="object-cover w-full rounded-lg h-80"
           />
           <img
             src={selectedNews.authorImage}

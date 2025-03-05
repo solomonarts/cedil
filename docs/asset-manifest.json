@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cedil/static/css/main.710cbd39.css",
-    "main.js": "/cedil/static/js/main.2a64f925.js",
+    "main.css": "/cedil/static/css/main.20a032cb.css",
+    "main.js": "/cedil/static/js/main.16b935dc.js",
     "static/js/453.b3dca186.chunk.js": "/cedil/static/js/453.b3dca186.chunk.js",
     "static/media/cedilgreen.jpg": "/cedil/static/media/cedilgreen.743140be792ff444aea6.jpg",
     "static/media/ceo.JPG": "/cedil/static/media/ceo.fbeb0354ea9ae15b2025.JPG",
@@ -9,6 +9,7 @@
     "static/media/banner4.jpg": "/cedil/static/media/banner4.e869fbbb69946765e49f.jpg",
     "static/media/banner3.jpg": "/cedil/static/media/banner3.1cea88d042b527fad38e.jpg",
     "static/media/cedil.png": "/cedil/static/media/cedil.1edb439c3c8bfa5a0f9f.png",
+    "static/media/PHOTO-2025-02-25-17-28-13.jpg": "/cedil/static/media/PHOTO-2025-02-25-17-28-13.b49cac8886cbc3828cdd.jpg",
     "static/media/Sofia Pro Bold Az.otf": "/cedil/static/media/Sofia Pro Bold Az.48c71aa3dea90cd4f94e.otf",
     "static/media/Sofia Pro Light Az.otf": "/cedil/static/media/Sofia Pro Light Az.9a65952e76032af94519.otf",
     "static/media/banner1.jpg": "/cedil/static/media/banner1.c1c854ddc6081b81d1e5.jpg",
@@ -24,12 +25,12 @@
     "static/media/circuit-svgrepo-com.svg": "/cedil/static/media/circuit-svgrepo-com.95f0daeb1d4c5971ed0683a04127ceda.svg",
     "index.html": "/cedil/index.html",
     "static/media/pattern.svg": "/cedil/static/media/pattern.0065f13ce8ff4a203e0f.svg",
-    "main.710cbd39.css.map": "/cedil/static/css/main.710cbd39.css.map",
-    "main.2a64f925.js.map": "/cedil/static/js/main.2a64f925.js.map",
+    "main.20a032cb.css.map": "/cedil/static/css/main.20a032cb.css.map",
+    "main.16b935dc.js.map": "/cedil/static/js/main.16b935dc.js.map",
     "453.b3dca186.chunk.js.map": "/cedil/static/js/453.b3dca186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.710cbd39.css",
-    "static/js/main.2a64f925.js"
+    "static/css/main.20a032cb.css",
+    "static/js/main.16b935dc.js"
   ]
 }
