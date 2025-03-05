@@ -7,7 +7,7 @@ import blogpic2 from "../../Assets/images/banner/banner4.jpg";
 const newsData = [
   {
     id: 1,
-    title: "New Innovations in AI Technology",
+    title: " CouldYou? Cup ",
     image: blogpic1,
     date: "March 5, 2025",
     time: "10:00 AM",
@@ -16,16 +16,16 @@ const newsData = [
     content:
       "Under our Gender Equality Program, CEDIL Global is the local distributor of the CouldYou? Cup In East Africa with a focus on Ugagda. CouldYou? Cup is tested and innovative tool to enhancing menstrual hygiene among the many girls who for long have been challenged with the issue of period poverty. CEDIL Global is working with CouldYou? Cup to deepen an iterative approach to enhancing menstrual hygiene and are collaborating with NGOs, governments, foundations, businesses, and Rotary International to provide Cups to some of the 2 million women and girls currently on a waitlist.",
   },
-  {
-    id: 2,
-    title: "Breakthrough in Quantum Computing",
-    image: blogpic2,
-    date: "March 4, 2025",
-    time: "3:30 PM",
-    author: "Jane Smith",
-    authorImage: blogpic1,
-    content: "Quantum computing is advancing at an unprecedented pace...",
-  },
+  //   {
+  //     id: 2,
+  //     title: "Breakthrough in Quantum Computing",
+  //     image: blogpic2,
+  //     date: "March 4, 2025",
+  //     time: "3:30 PM",
+  //     author: "Jane Smith",
+  //     authorImage: blogpic1,
+  //     content: "Quantum computing is advancing at an unprecedented pace...",
+  //   },
   // Add more news items as needed
 ];
 
@@ -35,7 +35,7 @@ const NewsPage = () => {
   return (
     <div className="gap-6 lg:p-16 lg:flex news-container">
       {/* Main News Section */}
-      <div className="p-4 bg-white rounded-lg lg:w-2/3 main-news">
+      <div className="flex flex-col p-4 bg-white rounded-lg lg:w-2/3 main-news">
         <div className="relative">
           <img
             src={selectedNews.image}
@@ -48,13 +48,15 @@ const NewsPage = () => {
             className="author-image absolute bottom-[-40px] left-6 w-20 h-20 rounded-full border-4 border-white"
           />
         </div>
-        <div className="px-6 mt-12">
+        <div className="flex flex-col px-6 mt-12">
           <h2 className="text-2xl font-bold">{selectedNews.title}</h2>
-          <p className="mt-1 text-sm text-gray-500">
+          <p className="mt-1 text-sm text-gray-500 w-fit">
             {selectedNews.date} | {selectedNews.time}
           </p>
-          <p className="mt-4 text-gray-700">{selectedNews.content}</p>
-          <div className="flex justify-end gap-3 mt-6 text-gray-600 share-icons border-[1px] w-fit float-end rounded-full px-4 py-2">
+          <p className="mt-4 text-gray-700 bg-slate-400/5">
+            {selectedNews.content}
+          </p>
+          <div className="flex justify-end gap-3 mt-6 text-gray-600 share-icons border-[1px] w-fit self-end float-end rounded-full px-4 py-2">
             <FaFacebookF
               className="cursor-pointer hover:text-blue-600"
               size={26}

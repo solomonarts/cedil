@@ -238,7 +238,7 @@ const Footer = () => {
               Bethel Road, Valley Rd, Nakwero. P.O BOX 111430 Kampala Wakiso,
               Uganda.
             </p>
-            <p className="flex gap-4 mt-1">
+            <p className="flex gap-4 mt-1 text-left">
               <FaPhone /> +256 767 150 148 / +256 745 987 878
             </p>
             <p className="flex gap-4 mt-3 text-left">
@@ -246,7 +246,7 @@ const Footer = () => {
               16212 Bothell-Everett Highway Suite #F123, Mill Creek, Washington
               98012
             </p>
-            <p className="flex gap-4 mt-1">
+            <p className="flex gap-4 mt-1 text-left">
               <FaPhone /> +1 206 482 5531
             </p>
           </div>

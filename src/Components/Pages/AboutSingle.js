@@ -12,24 +12,18 @@ const AboutUsSingle = () => {
       {/* Header Section */}
       <header className="about-us-header">
         <div className="overlay">
-          <h1 className="page-title">
-            {" "}
-            <Link className="hover:text-[#9ed263]" to={`/`}>
-              {" "}
-              {`< `}Home
-            </Link>{" "}
-            | About Us
-          </h1>
+          <h1 className="page-title">About Us</h1>
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="about-us-content px-5 md:px-32 lg:px-48">
+      <main className="px-5 about-us-content md:px-32 lg:px-48">
         <p className="text-[16px]">
-          CEDIL Global achieves its mandate through advancing strategic multi-country, city,
-          regional, and continental programs that enhance systems strengthening,
-          policy engagement, and institutional capacity enhancement for public
-          and private entities in order to effectively respond to complex gender, health, economic and climate development
+          CEDIL Global achieves its mandate through advancing strategic
+          multi-country, city, regional, and continental programs that enhance
+          systems strengthening, policy engagement, and institutional capacity
+          enhancement for public and private entities in order to effectively
+          respond to complex gender, health, economic and climate development
           challenges in Africa.
         </p>
         <div>
