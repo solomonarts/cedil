@@ -25,7 +25,7 @@ const AboutNew = () => {
                     {leadersData.map((leader) => (
                       <li>
                         <a
-                          href={`/leadership/${leader.id}`}
+                          href={`/leadership`}
                           className="hover:text-green-600"
                         >
                           {leader.role}
