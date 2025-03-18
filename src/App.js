@@ -17,12 +17,12 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="App">
-      <Router>
+      <Router basename="/">
         <TransparentNavbar />
         <DonationDrawer isOpen={isOpen} setIsOpen={setIsOpen} />
         <Routes>
           <Route
-            path="/*"
+            path="/"
             element={
               <>
                 <div>
