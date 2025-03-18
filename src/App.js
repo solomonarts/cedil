@@ -50,7 +50,7 @@ function App() {
               </>
             }
           />
-          <Route path="/leadership" element={<Leadership />} />
+          <Route path="/leadership-page" element={<Leadership />} />
           <Route path="/about-us" element={<AboutUsSingle />} />
           <Route path="/news-page" element={<NewsPage />} />
         </Routes>

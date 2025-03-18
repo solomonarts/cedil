@@ -49,7 +49,7 @@ const teams = {
 };
 
 const Leadership = () => {
-  const { id } = useParams(); // Get leader ID from URL
+  const { id } = 0; // Get leader ID from URL
   const teamNames = Object.keys(teams);
   const [selectedTeam, setSelectedTeam] = useState(teamNames[0]);
   const [selectedLeader, setSelectedLeader] = useState(null);
