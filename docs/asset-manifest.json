@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.e96c7aee.css",
-    "main.js": "./static/js/main.01344920.js",
+    "main.css": "./static/css/main.a02873c7.css",
+    "main.js": "./static/js/main.3ecfefbc.js",
     "static/js/453.b3dca186.chunk.js": "./static/js/453.b3dca186.chunk.js",
     "static/media/cedilgreen.jpg": "./static/media/cedilgreen.743140be792ff444aea6.jpg",
     "static/media/ceo.JPG": "./static/media/ceo.fbeb0354ea9ae15b2025.JPG",
@@ -21,16 +21,17 @@
     "static/media/cedilwhite.png": "./static/media/cedilwhite.ccc1d3243e18bdde4539.png",
     "static/media/banner6.jpg": "./static/media/banner6.7d189aac45aad5878a99.jpg",
     "static/media/cediltrans.png": "./static/media/cediltrans.88f7ac82fd26ba8dcf67.png",
+    "static/media/hariet1.JPG": "./static/media/hariet1.c7e629fdbd85c3bb259d.JPG",
     "static/media/tree-of-rectangles-foliage-svgrepo-com.svg": "./static/media/tree-of-rectangles-foliage-svgrepo-com.b6ec4193bcc071c92bc171ca55e6491e.svg",
     "static/media/circuit-svgrepo-com.svg": "./static/media/circuit-svgrepo-com.95f0daeb1d4c5971ed0683a04127ceda.svg",
     "index.html": "./index.html",
     "static/media/pattern.svg": "./static/media/pattern.0065f13ce8ff4a203e0f.svg",
-    "main.e96c7aee.css.map": "./static/css/main.e96c7aee.css.map",
-    "main.01344920.js.map": "./static/js/main.01344920.js.map",
+    "main.a02873c7.css.map": "./static/css/main.a02873c7.css.map",
+    "main.3ecfefbc.js.map": "./static/js/main.3ecfefbc.js.map",
     "453.b3dca186.chunk.js.map": "./static/js/453.b3dca186.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e96c7aee.css",
-    "static/js/main.01344920.js"
+    "static/css/main.a02873c7.css",
+    "static/js/main.3ecfefbc.js"
   ]
 }

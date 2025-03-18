@@ -4,6 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
 import { teampics } from "../../Constants";
 import ceopic from "../../Assets/images/team/ceo.JPG";
+import harietpic from "../../Assets/images/team/hariet1.JPG";
 
 const teams = {
   "Executive Team": [
@@ -14,36 +15,36 @@ const teams = {
       image: ceopic,
       bio: "Dr. Obed Kabanda a Seattle University Washington Doctoral Graduate and Global Leadership Fellow, brings over 22 years of experience to CEDIL Global as CEO and President having been part of the global philanthropic ecosystem influencing global aid funding and philanthropic partnerships for over two decades. His passion and experience have been in championing efforts aimed at shifting the way global development funding for gender equality, health, education, economic development, climate action, and other social change funding ecosystems can embrace locally led approaches. He has initiated, developed, and managed strategic bilateral and multilateral funding partnerships with over $200M raised at regional and global levels over 20 years with over 5 nonprofits he has worked with. He has previously worked at Global Fund for Women as Senior Director Global Partnerships and acted as Vice President of the Development Team where he coordinated 6-8 dollar-figure regional and global funding collaboratives. Obed has served as part of the World Bank Civil Society Working Group, UN Technical Working Group, and as a board member to various international organizations. He has stewarded funding cultivation and partnerships from US, EU, Canada, Netherlands, Sweden, and French governments, foundations, and high net worth individuals. Obed has also delivered on international consultancies with UNICEF, UNFPA, Norwegian People’s AID, EARTH University among others. Obed holds a Doctorate of Organizational Learning and Leadership, a Master of Public Health Leadership, a Stanford University Executive Leadership Training for Nonprofit Leaders, a Harvard University Strategic Management Training, and a Bachelors Degree of Community Leadership and Development among others. He prides in being African and supporting nonprofits, Universities, governments, and other private institutions in harnessing existing development opportunities and funding continentally and globally.",
     },
-    {
-      id: 2,
-      name: "John Smith",
-      role: "International Advisory Board",
-      image: "https://via.placeholder.com/150",
-      bio: "John Smith oversees operational strategy, ensuring efficiency and scalability.",
-    },
+    // {
+    //   id: 2,
+    //   name: "John Smith",
+    //   role: "International Advisory Board",
+    //   image: "https://via.placeholder.com/150",
+    //   bio: "John Smith oversees operational strategy, ensuring efficiency and scalability.",
+    // },
   ],
   "Advisory Board": [
     {
       id: 3,
-      name: "Sarah Lee",
-      role: "Innovation and Research Fellows",
-      image: "https://via.placeholder.com/150",
-      bio: "Sarah Lee brings extensive governance experience, guiding the strategic direction of our organization.",
+      name: "Ms. Harriet Akullu (PhD)",
+      role: "International Advisory Board Chair , Child Protection Manager, UNICEF",
+      image: harietpic,
+      bio: "Ms. Harriet Akullu is a distinguished leader in Public Policy with a bias towards social development, child welfare, global health and gender justice. She has had an illustrious career at the United Nations, where she has held various leadership positions, working tirelessly to promote the rights and wellbeing of women and children across Africa and the Middle East. In these roles, Harriet has successfully managed multi-million-dollar, and multi-country programs; spearheaded policy advocacies and initiatives around national policies and guidelines development across Africa. Her advocacy and representation efforts have seen her engage with social governance issues across multiple sectors. Ms. Akullu holds a proven track record in donor engagement, corporate reporting, and multisectoral grant management.' As a Board Chair of the International Advisory Board of CEDIL Global, Harriet brings her wealth of expertise and passion for African-led solutions to support the organization's mission and vision. Her extensive experience and leadership make her an asset to any executive board, where her insights and governance skills can drive strategic initiatives and organizational success. Harriet and other members provide strategic guidance and oversight to the organization's mission and her leadership and expertise are instrumental in shaping CEDIL Global's initiatives and partnerships.",
     },
-    {
-      id: 4,
-      name: "Michael Brown",
-      role: "Issue-Based Working Groups",
-      image: "https://via.placeholder.com/150",
-      bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
-    },
-    {
-      id: 5,
-      name: "Michael",
-      role: "Careers",
-      image: "https://via.placeholder.com/150",
-      bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
-    },
+    // {
+    //   id: 4,
+    //   name: "Michael Brown",
+    //   role: "Issue-Based Working Groups",
+    //   image: "https://via.placeholder.com/150",
+    //   bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
+    // },
+    // {
+    //   id: 5,
+    //   name: "Michael",
+    //   role: "Careers",
+    //   image: "https://via.placeholder.com/150",
+    //   bio: "Michael Brown has advised numerous global organizations on policy development and international collaborations.",
+    // },
   ],
 };
 
@@ -113,7 +114,7 @@ const Leadership = () => {
       {/* Other Leaders in Selected Team */}
       <div className="mt-6">
         <h4 className="mb-3 text-lg font-semibold">Meet the Team</h4>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {teams[selectedTeam].map((leader, lindx) => (
             <div
               key={lindx}

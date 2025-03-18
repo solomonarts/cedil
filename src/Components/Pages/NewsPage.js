@@ -2,12 +2,13 @@ import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import blogpic1 from "../../Assets/images/news/PHOTO-2025-02-25-17-28-13.jpg";
 import blogpic2 from "../../Assets/images/banner/banner4.jpg";
+import ImageBox2 from "../ImageContainer/ImageBox2";
 // import "./News.scss";
 
 const newsData = [
   {
     id: 1,
-    title: " CouldYou? Cup ",
+    title: "CEDIL Global Launches a Partnership with CouldYou?Cup USA ",
     image: blogpic1,
     date: "March 5, 2025",
     time: "10:00 AM",
@@ -37,11 +38,12 @@ const NewsPage = () => {
       {/* Main News Section */}
       <div className="flex flex-col p-4 bg-white rounded-lg lg:w-2/3 main-news">
         <div className="relative">
-          <img
+          {/* <img
             src={selectedNews.image}
             alt={selectedNews.title}
             className="object-cover w-full rounded-lg h-80"
-          />
+          /> */}
+          <ImageBox2 imageSrc={selectedNews.image} />
           <img
             src={selectedNews.authorImage}
             alt={selectedNews.author}

@@ -104,8 +104,7 @@
 // export default ContactUs;
 
 import React from "react";
-import logo from "../../Assets/images/logos/cediltrans.png";
-import { menu, contacts, socials } from "../../Constants/index";
+import { logos, menu, contacts, socials } from "../../Constants/index";
 import { Link } from "react-router-dom";
 import { FaLocationArrow } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
@@ -191,7 +190,7 @@ const Footer = () => {
               {/* Replace with your actual logo */}
               <span className="text-3xl font-bold text-green-400">
                 <img
-                  src={logo}
+                  src={logos["cedilwhite.png"]}
                   alt="CEDIL LOGO"
                   className="w-full h-auto aspect-auto"
                 />
@@ -234,9 +233,9 @@ const Footer = () => {
               </a>
             </p>
             <p className="flex gap-4 mt-3 text-left">
-              <FaLocationArrow size={30} /> Plot 6105 Valley Road, Gayaza Road,
-              Bethel Road, Valley Rd, Nakwero. P.O BOX 111430 Kampala Wakiso,
-              Uganda.
+              <FaLocationArrow size={30} />
+              African Office: Plot 6105 Valley Road, Gayaza Road, Bethel Road,
+              Valley Rd, Nakwero. P.O BOX 111430 Kampala Wakiso, Uganda.
             </p>
             <p className="flex gap-4 mt-1 text-left">
               <FaPhone /> +256 767 150 148 / +256 745 987 878
