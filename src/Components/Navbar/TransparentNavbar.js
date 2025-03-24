@@ -44,9 +44,13 @@ const TransparentNavbar = () => {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
-        <Link onClick={() => navigate("#home")}>
+        <Link onClick={() => navigate("/#home")}>
           <NavbarBrand>
-            <img src={logos["cedilwhite.png"]} alt="Cedil Logo" />
+            <img
+              src={logos["cediltrans.png"]}
+              alt="Cedil Logo"
+              className="h-full"
+            />
           </NavbarBrand>
         </Link>
       </NavbarContent>
