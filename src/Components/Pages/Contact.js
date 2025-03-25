@@ -234,8 +234,8 @@ const Footer = () => {
             </p>
             <p className="flex gap-4 mt-3 text-left">
               <FaLocationArrow size={30} />
-              African Office: Plot 6105 Valley Road, Gayaza Road, Bethel Road,
-              Valley Rd, Nakwero. P.O BOX 111430 Kampala Wakiso, Uganda.
+              African Office: Plot 6105 Valley Road, Canaan Sites, Gayaza
+              Nakwero. P.O BOX 111430 Kampala Wakiso, Uganda.
             </p>
             <p className="flex gap-4 mt-1 text-left">
               <FaPhone /> +256 767 150 148 / +256 745 987 878
