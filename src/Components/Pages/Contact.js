@@ -258,7 +258,7 @@ const Footer = () => {
             {socials.map((s, sindx) => (
               <a
                 key={sindx}
-                href="#"
+                href={s.link}
                 className="p-2 transition bg-green-900 rounded-full hover:bg-green-400"
               >
                 <div className="text-[8px] text-white">{s.icon}</div>

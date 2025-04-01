@@ -52,16 +52,12 @@ const ThematicAreas = () => {
     <div className="flex flex-col mt-10 overflow-hidden thematic-areas-container xl:flex-row">
       <div className="relative w-full mr-5 overflow-hidden rounded-md h-1/2 xl:w-2/5">
         <div className="absolute content-center justify-center w-full h-full bg-black/30">
-          <h4
-            className={`text-[30px] text-white text-wrap text-center ${
-              currentArea === 0 && "-m-40"
-            }`}
-          >
+          <h4 className={`text-[30px] text-white text-wrap text-center`}>
             Thematic Area {currentArea + 1}
           </h4>
         </div>
         <img src={thematicAreas[currentArea].image} />
-        {currentArea === 0 && (
+        {/* {currentArea === 0 && (
           <div className="bg-white">
             <p className="text-[16px] bg-white">
               Under our Gender Equality Program, CEDIL Global is the local
@@ -76,7 +72,7 @@ const ThematicAreas = () => {
               a waitlist.
             </p>
           </div>
-        )}
+        )} */}
       </div>
 
       {/* Right Column: Thematic Areas Slider */}

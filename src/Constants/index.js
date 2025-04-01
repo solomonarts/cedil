@@ -1,24 +1,13 @@
 import InteractiveDiagram from "../Components/Diagrams/InteractiveDiagram";
-import Leadership from "../Components/Diagrams/Leadership";
-import VennDiagram from "../Components/Diagrams/VennDagram";
-import AboutMenu from "../Components/Pages/AboutMenu";
+import TheoryDiag from "../Components/Diagrams/TheoryDiag";
 import AboutNew from "../Components/Pages/Aboutnew";
-import AboutUs from "../Components/Pages/Aboutus";
-import AboutUs2 from "../Components/Pages/Aboutus2";
 import Approach from "../Components/Pages/Approach";
 import ContactUs from "../Components/Pages/Contact";
 import ImpactCounterSection from "../Components/Sections/ImpactSection";
 import SectionCard from "../Components/Sections/SectionCard";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaLongArrowAltRight,
-} from "react-icons/fa";
-import { FaSquareXTwitter, FaXTwitter } from "react-icons/fa6";
-
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { HiOutlineMailOpen } from "react-icons/hi";
-import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { SlLocationPin } from "react-icons/sl";
 
 // import '../Assets/images/logos'
@@ -122,8 +111,14 @@ const icon_class = "w-10 h-auto";
 export const socials = [
   { icon: <FaFacebook className={icon_class} />, link: "" },
   { icon: <FaInstagram className={icon_class} />, link: "" },
-  { icon: <FaLinkedin className={icon_class} />, link: "" },
-  { icon: <FaXTwitter className={icon_class} />, link: "" },
+  {
+    icon: <FaLinkedin className={icon_class} />,
+    link: "https://www.linkedin.com/showcase/cedil-global/",
+  },
+  {
+    icon: <FaXTwitter className={icon_class} />,
+    link: "https://x.com/cedilglobal?s=21&t=LCnJdsE5HtvBYsYTM3iiaQ",
+  },
 ];
 
 const s_icon = "tint-color w-10 h-auto";
@@ -240,7 +235,8 @@ export const contentData = {
       svgbg: icons["tree-of-rectangles-foliage-svgrepo-com.svg"],
       element: (
         <>
-          <Leadership />
+          <TheoryDiag />
+          {/* <InteractiveDiagram /> */}
         </>
       ),
       patternPosition: "right",

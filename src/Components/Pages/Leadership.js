@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaInbox, FaLinkedin, FaMailBulk } from "react-icons/fa";
+import { FaMessage, FaXTwitter } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
 import { teampics } from "../../Constants";
 import ceopic from "../../Assets/images/team/ceo.JPG";
@@ -13,7 +13,13 @@ const teams = {
       name: "Obed Kabanda (PhD)",
       role: "CEO & President CEDIL Global",
       image: ceopic,
-      bio: "Dr. Obed Kabanda a Seattle University Washington Doctoral Graduate and Global Leadership Fellow, brings over 22 years of experience to CEDIL Global as CEO and President having been part of the global philanthropic ecosystem influencing global aid funding and philanthropic partnerships for over two decades. His passion and experience have been in championing efforts aimed at shifting the way global development funding for gender equality, health, education, economic development, climate action, and other social change funding ecosystems can embrace locally led approaches. He has initiated, developed, and managed strategic bilateral and multilateral funding partnerships with over $200M raised at regional and global levels over 20 years with over 5 nonprofits he has worked with. He has previously worked at Global Fund for Women as Senior Director Global Partnerships and acted as Vice President of the Development Team where he coordinated 6-8 dollar-figure regional and global funding collaboratives. Obed has served as part of the World Bank Civil Society Working Group, UN Technical Working Group, and as a board member to various international organizations. He has stewarded funding cultivation and partnerships from US, EU, Canada, Netherlands, Sweden, and French governments, foundations, and high net worth individuals. Obed has also delivered on international consultancies with UNICEF, UNFPA, Norwegian People’s AID, EARTH University among others. Obed holds a Doctorate of Organizational Learning and Leadership, a Master of Public Health Leadership, a Stanford University Executive Leadership Training for Nonprofit Leaders, a Harvard University Strategic Management Training, and a Bachelors Degree of Community Leadership and Development among others. He prides in being African and supporting nonprofits, Universities, governments, and other private institutions in harnessing existing development opportunities and funding continentally and globally.",
+      bio: `Dr. Obed Kabanda a Seattle University Washington Doctoral Graduate and Global Leadership Fellow, brings over 22 years of experience to CEDIL Global as CEO and President having been part of the global philanthropic ecosystem influencing global aid funding and philanthropic partnerships for over two decades.\n 
+
+      His passion and experience have been in championing efforts aimed at shifting the way global development funding for gender equality, health, education, economic development, climate action, and other social change funding ecosystems can embrace locally led approaches. He has initiated, developed, and managed strategic bilateral and multilateral funding partnerships with over $200M raised at regional and global levels over 20 years with over 5 nonprofits he has worked with.\n 
+      
+      He has previously worked at Global Fund for Women as Senior Director Global Partnerships and acted as Vice President of the Development Team where he coordinated 6-8 dollar-figure regional and global funding collaboratives. Obed has served as part of the World Bank Civil Society Working Group, UN Technical Working Group, and as a board member to various international organizations. He has stewarded funding cultivation and partnerships from US, EU, Canada, Netherlands, Sweden, and French governments, foundations, and high net worth individuals. Obed has also delivered on international consultancies with UNICEF, UNFPA, Norwegian People’s AID, EARTH University among others.\n
+      
+      Obed holds a Doctorate of Organizational Learning and Leadership, a Master of Public Health Leadership, a Stanford University Executive Leadership Training for Nonprofit Leaders, a Harvard University Strategic Management Training, and a Bachelors Degree of Community Leadership and Development among others. He prides in being African and supporting nonprofits, Universities, governments, and other private institutions in harnessing existing development opportunities and funding continentally and globally.`,
     },
     // {
     //   id: 2,
@@ -26,10 +32,13 @@ const teams = {
   "Advisory Board": [
     {
       id: 3,
-      name: "Ms. Harriet Akullu (PhD)",
-      role: "International Advisory Board Chair , Child Protection Manager, UNICEF",
+      name: "Ms. Harriet Akullu",
+      role: "Social Development Expert , International Advisory Board Chair",
       image: harietpic,
-      bio: "Ms. Harriet Akullu is a distinguished leader in Public Policy with a bias towards social development, child welfare, global health and gender justice. She has had an illustrious career at the United Nations, where she has held various leadership positions, working tirelessly to promote the rights and wellbeing of women and children across Africa and the Middle East. In these roles, Harriet has successfully managed multi-million-dollar, and multi-country programs; spearheaded policy advocacies and initiatives around national policies and guidelines development across Africa. Her advocacy and representation efforts have seen her engage with social governance issues across multiple sectors. Ms. Akullu holds a proven track record in donor engagement, corporate reporting, and multisectoral grant management.' As a Board Chair of the International Advisory Board of CEDIL Global, Harriet brings her wealth of expertise and passion for African-led solutions to support the organization's mission and vision. Her extensive experience and leadership make her an asset to any executive board, where her insights and governance skills can drive strategic initiatives and organizational success. Harriet and other members provide strategic guidance and oversight to the organization's mission and her leadership and expertise are instrumental in shaping CEDIL Global's initiatives and partnerships.",
+      bio: `Ms. Harriet Akullu is a distinguished leader in Public Policy with a bias towards social development, child welfare, global health and gender justice. She has had an illustrious career at the United Nations, where she has held various leadership positions, working tirelessly to promote the rights and wellbeing of women and children across Africa and the Middle East.\n 
+      In these roles, Harriet has successfully managed multi-million-dollar, and multi-country programs; spearheaded policy advocacies and initiatives around national policies and guidelines development across Africa. Her advocacy and representation efforts have seen her engage with social governance issues across multiple sectors. Ms. Akullu holds a proven track record in donor engagement, corporate reporting, and multisectoral grant management.\n 
+      As a Board Chair of the International Advisory Board of CEDIL Global, Harriet brings her wealth of expertise and passion for African-led solutions to support the organization's mission and vision. Her extensive experience and leadership make her an asset to any executive board, where her insights and governance skills can drive strategic initiatives and organizational success.\n
+      Harriet and other members provide strategic guidance and oversight to the organization's mission and her leadership and expertise are instrumental in shaping CEDIL Global's initiatives and partnerships.`,
     },
     // {
     //   id: 4,
@@ -106,7 +115,13 @@ const Leadership = () => {
           <div className="mt-4 md:ml-6 md:mt-0">
             <h3 className="text-2xl font-semibold">{selectedLeader.name}</h3>
             <p className="font-medium text-green-700">{selectedLeader.role}</p>
-            <p className="mt-2 text-gray-700">{selectedLeader.bio}</p>
+            <p className="mt-2 text-gray-700">
+              {selectedLeader.bio.split("\n").map((line, aindex) => (
+                <div key={aindex} style={{ marginBottom: "14px" }}>
+                  {line}
+                </div>
+              ))}
+            </p>
           </div>
         </div>
       )}
@@ -144,16 +159,16 @@ const Leadership = () => {
                     href="#"
                     class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
                   >
-                    <FaFacebook />
+                    <FaMessage />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/showcase/cedil-global/"
                     class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
                   >
                     <FaXTwitter />
                   </a>
                   <a
-                    href="#"
+                    href="https://x.com/cedilglobal?s=21&t=LCnJdsE5HtvBYsYTM3iiaQ"
                     class="text-gray-500 group-hover:text-white transition-all duration-300 ease-in-out hover:text-[#9ed263]"
                   >
                     <FaLinkedin />
